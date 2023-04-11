@@ -1,112 +1,183 @@
 /*----Font Styling-----*/
 @font-face {
     font-family: 'Gotham Narrow';
-    src: url('https://static1.squarespace.com/static/6424d3bcf7f32f76bbdd9485/t/6425f90aa60cd7735cfaf745/1680210187810/GothamNarrow-Black.otf') format('opentype');
+    src: url('../../fonts/Gotham/GothamNarrow-Black.otf') format('opentype');
     font-weight: 900;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Gotham Narrow';
-    src: url('https://static1.squarespace.com/static/6424d3bcf7f32f76bbdd9485/t/6425f917c0fa8e1ec371b01c/1680210200866/GothamNarrow-BlackItalic.otf') format('opentype');
+    src: url('../../fonts/Gotham/GothamNarrow-BlackItalic.otf') format('opentype');
     font-weight: 900;
     font-style: italic;
   }
 
   @font-face {
     font-family: 'Gotham Narrow';
-    src: url('https://static1.squarespace.com/static/6424d3bcf7f32f76bbdd9485/t/6425f93d7241b825b05e7407/1680210238774/GothamNarrow-Bold.otf') format('opentype');
+    src: url('../../fonts/Gotham/GothamNarrow-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Gotham Narrow';
-    src: url('https://static1.squarespace.com/static/6424d3bcf7f32f76bbdd9485/t/6425f94221fb654067d5fcba/1680210243691/GothamNarrow-BoldItalic.otf') format('opentype');
+    src: url('../../fonts/Gotham/GothamNarrow-BoldItalic.otf') format('opentype');
     font-weight: bold;
     font-style: italic;
   }
 
   @font-face {
     font-family: 'Gotham Narrow';
-    src: url('https://static1.squarespace.com/static/6424d3bcf7f32f76bbdd9485/t/6425f94533dc834bd207ddde/1680210246845/GothamNarrow-Book.otf') format('opentype');
+    src: url('../../fonts/Gotham/GothamNarrow-Book.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Gotham Narrow';
-    src: url('https://static1.squarespace.com/static/6424d3bcf7f32f76bbdd9485/t/6425f948faa9984b4a930ab4/1680210249686/GothamNarrow-BookItalic.otf') format('opentype');
+    src: url('../../fonts/Gotham/GothamNarrow-BookItalic.otf') format('opentype');
     font-weight: 500;
     font-style: italic;
   }
 
   @font-face {
     font-family: 'Gotham Narrow';
-    src: url('https://static1.squarespace.com/static/6424d3bcf7f32f76bbdd9485/t/6425f9169d07911f9a16b7c4/1680210199924/GothamNarrow-Light.otf') format('opentype');
+    src: url('../../fonts/Gotham/GothamNarrow-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Gotham Narrow';
-    src: url('https://static1.squarespace.com/static/6424d3bcf7f32f76bbdd9485/t/6425f94eab63362deb7d89ca/1680210256014/GothamNarrow-LightItalic.otf') format('opentype');
+    src: url('../../fonts/Gotham/GothamNarrow-LightItalic.otf') format('opentype');
     font-weight: 300;
     font-style: italic;
   }
 
   @font-face {
     font-family: 'Gotham Narrow';
-    src: url('https://static1.squarespace.com/static/6424d3bcf7f32f76bbdd9485/t/6425f951ed80c6315a67709d/1680210258798/GothamNarrow-Medium.otf') format('opentype');
+    src: url('../../fonts/Gotham/GothamNarrow-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Gotham Narrow';
-    src: url('https://static1.squarespace.com/static/6424d3bcf7f32f76bbdd9485/t/6425f9654a9314614f1e66f6/1680210279140/GothamNarrow-MediumItalic.otf') format('opentype');
+    src: url('../../fonts/Gotham/GothamNarrow-MediumItalic.otf') format('opentype');
     font-weight: 500;
     font-style: italic;
   }
 
   @font-face {
     font-family: 'Gotham Narrow';
-    src: url('https://static1.squarespace.com/static/6424d3bcf7f32f76bbdd9485/t/6425f969d3c21c364f818e41/1680210282024/GothamNarrow-Thin.otf') format('opentype');
+    src: url('../../fonts/Gotham/GothamNarrow-Thin.otf') format('opentype');
     font-weight: 100;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Gotham Narrow';
-    src: url('https://static1.squarespace.com/static/6424d3bcf7f32f76bbdd9485/t/6425f96b0d6da919bc3bf4fb/1680210284775/GothamNarrow-ThinItalic.otf') format('opentype');
+    src: url('../../fonts/Gotham/GothamNarrow-ThinItalic.otf') format('opentype');
     font-weight: 100;
     font-style: italic;
   }
 
   @font-face {
     font-family: 'Gotham Narrow';
-    src: url('https://static1.squarespace.com/static/6424d3bcf7f32f76bbdd9485/t/6425f96e0d6da919bc3bf50c/1680210287677/GothamNarrow-Ultra.otf') format('opentype');
+    src: url('../../fonts/Gotham/GothamNarrow-Ultra.otf') format('opentype');
     font-weight: 800;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Gotham Narrow';
-    src: url('https://static1.squarespace.com/static/6424d3bcf7f32f76bbdd9485/t/6425f9dae145265e6354c53d/1680210395746/GothamNarrow-UltraItalic.otf') format('opentype');
+    src: url('../../fonts/Gotham/GothamNarrow-UltraItalic.otf') format('opentype');
     font-weight: 800;
     font-style: italic;
   }
 
   @font-face {
     font-family: 'Gotham Narrow';
-    src: url('https://static1.squarespace.com/static/6424d3bcf7f32f76bbdd9485/t/6425f9dea8a7fd4c8db29857/1680210399686/GothamNarrow-XLight.otf') format('opentype');
+    src: url('../../fonts/Gotham/GothamNarrow-XLight.otf') format('opentype');
     font-weight: 200;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Gotham Narrow';
-    src: url('https://static1.squarespace.com/static/6424d3bcf7f32f76bbdd9485/t/6425f9e309a26e553515042f/1680210404268/GothamNarrow-XLightItalic.otf') format('opentype');
+    src: url('../../fonts/Gotham/GothamNarrow-XLightItalic.otf') format('opentype');
     font-weight: 200;
     font-style: italic;
+  }
+
+  // Add Gliko Font
+  @font-face {
+    font-family: 'Gliko';
+    src: url('./../fonts/Gliko/GlikoModernCondensedL-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gliko';
+    src: url('./../fonts/Gliko/GlikoModernCondensedL-BlackItalic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Gliko';
+    src: url('./../fonts/Gliko/GlikoModernCondensedL-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gliko';
+    src: url('./../fonts/Gliko/GlikoModernCondensedL-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Gliko';
+    src: url('./../fonts/Gliko/GlikoModernCondensedL-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Gliko';
+    src: url('./../fonts/Gliko/GlikoModernCondensedL-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gliko';
+    src: url('./../fonts/Gliko/GlikoModernCondensedL-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Gliko';
+    src: url('./../fonts/Gliko/GlikoModernCondensedL-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gliko';
+    src: url('./../fonts/Gliko/GlikoModernCondensedL-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Gliko';
+    src: url('./../fonts/Gliko/GlikoModernCondensedL-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
   }
