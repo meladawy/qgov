@@ -1,5 +1,43 @@
 @import "variables";
+@import "fonts";
 
 body {
     background-color: $background-color;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+button,
+input,
+select,
+textarea,
+optgroup,
+option,
+label,
+a,
+a.sqs-block-button-element,
+#siteWrapper *,
+#siteWrapper .sqs-block-button-element,
+table,
+th,
+td,
+blockquote,
+pre,
+code,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+figcaption,
+figure,
+nav,
+header,
+footer,
+article,
+section,
+aside {
+  font-family: $base-font-family;
 }
