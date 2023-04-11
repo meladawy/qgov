@@ -1,10 +1,21 @@
 // Colors
-$primary-color: #3498db;
-$secondary-color: #2ecc71;
-$background-color: #f5f5f5;
+$color-teal: #005961;
+$color-light-teal: #D9EEEA;
+$color-yellow: #F5B33D;
+$color-light-yellow: #FFF0D8;
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-gray-70: #454545;
+$color-gray-30: #BDBDBD;
+
+$primary-color: $color-teal;
+$secondary-color: $color-light-teal;
 
 // Font
-$base-font-family: 'Gotham Narrow', sans-serif;
 $base-font-size: 16px;
 
+$gotham-font-family: 'Gotham Narrow', sans-serif;
 $gliko-font-family: 'Gliko', sans-serif;
+
+$base-font-family: $gotham-font-family;
+$secondary-font-family: $gliko-font-family;
