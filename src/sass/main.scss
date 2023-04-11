@@ -1,9 +1,6 @@
 @import "variables";
 @import "fonts";
-
-body {
-    background-color: $background-color;
-}
+@import "grids";
 
 body,
 h1, h2, h3, h4, h5, h6,
