@@ -135,6 +135,8 @@ $link-color: #fff;
 
             h1, h2, h3 {
               margin: 0 0 25px 0;
+              color: $color-gray-70;
+              font-weight: 400;
             }
 
             &.active {
