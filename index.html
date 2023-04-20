@@ -1,11 +1,252 @@
-<html>
-    <head>
-        <title>My first template</title>
-        <link rel="stylesheet" href="dist/css/main.css">
-        <script src="dist/js/main.min.js"></script>
-    </head>
-    <body>
-        <h1>My first template</h1>
-        <p>My first paragraph</p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/css/main.css">
+    <script src="dist/js/main.min.js"></script>
+</head>
+
+<body>
+    <h1>Mega menu component</h1>
+    <nav class="mega-menu">
+        <div class="menu-container">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="Your Logo"></a>
+            </div>
+            <ul class="menu-items">
+                <li class="submenu-parent">
+                    <a href="#">About</a>
+                    <div class="submenu">
+                        <div class="submenu-links-wrapper">
+                            <div class="submenu-section">
+                                <a href="/about">What is Quantgov</a>
+                            </div>
+                            <div class="submenu-section">
+                                <a href="/our-work-in-action">Our work in action</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="submenu-parent">
+                    <a href="#">Data</a>
+                    <div class="submenu">
+                        <div class="submenu-links-wrapper">
+                            <div class="submenu-section">
+                                <a href="https://www.reghub.ai/data/bulk">CSVs</a>
+                            </div>
+                            <div class="submenu-section">
+                                <a href="https://www.reghub.ai/data/custom">Interactive Downloader</a>
+                            </div>
+                            <div class="submenu-section" data-extra-details="submenu-section-apis">
+                                <h3>APIs <i class="fas fa-chevron-right"></i></h3>
+                                <ul>
+                                    <li><a href="#">Subcategory 2.1</a></li>
+                                    <li><a href="#">Subcategory 2.2</a></li>
+                                    <li><a href="#">Subcategory 2.3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="submenu-extra-content-wrapper">
+                            <div class="submenu-extra-section-item" id="submenu-section-apis">
+                                <h3>Our APIs</h3>
+                                <ul>
+                                    <li><a href="https://api.quantgov.org/swagger-ui.html">RegCensus API</a></li>
+                                    <li><a href="https://github.com/QuantGov/regcensus-api-python">Python API Package</a></li>
+                                    <li><a href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a></li>
+                                    <li><a href="https://www.quantgov.org/api-python-library-full-tutorial">API Help Guide</a></li>
+                                    <li><a href="https://new-website-files.s3.amazonaws.com/Regcensus+API+Patch+2.1.pdf">Patch Notes</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Add more submenu-sections as needed -->
+                    </div>
+                </li>
+                <li><a href="#">Visuals</a></li>
+                <li><a href="#">State Snapshots</a></li>
+                <li><a href="#">AI-Readable Laws & Rules</a></li>
+                <li><a href="#">Get Involved</a></li>
+            </ul>
+            <div class="search">
+                <input type="search" placeholder="Search...">
+            </div>
+        </div>
+    </nav>
+<br>
+
+    <header class="navbar sticky" style="display: none;">
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="Your Logo"></a>
+        </div>
+        <div class="menu-btn">
+            <div class="menu-btn__lines"></div>
+        </div>
+        <ul class="menu-items">
+            <li><a href="#" class="menu-item first-item">Home Page</a></li>
+            <li class="dropdown">
+                <a href="#" class="menu-item first-item">Dropdown Right</a>
+                <ul class="dropdown-menu sample">
+                    <li><a href="#" class="menu-item">Item 1</a></li>
+                    <li><a href="#" class="menu-item">Item 2</a></li>
+                    <li><a href="#" class="menu-item">Item 3</a></li>
+                    <li class="dropdown dropdown-right">
+                        <a href="#" class="menu-item">
+                            Item 4
+                        </a>
+                        <ul class="menu-right sample">
+                            <li><a href="#" class="menu-item">Item 4.1</a></li>
+                            <li><a href="#" class="menu-item">Item 4.2</a></li>
+                            <li><a href="#" class="menu-item">Item 4.3</a></li>
+                            <li><a href="#" class="menu-item">Item 4.4</a></li>
+                            <li><a href="#" class="menu-item">Item 4.5</a></li>
+                            <li><a href="#" class="menu-item">Item 4.6</a></li>
+                            <li><a href="#" class="menu-item">Item 4.7</a></li>
+                            <li><a href="#" class="menu-item">Item 4.8</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu-item">Item 5</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="menu-item first-item">Dropdown Left</a>
+                <ul class="dropdown-menu sample">
+                    <li><a href="#" class="menu-item">Item 1</a></li>
+                    <li><a href="#" class="menu-item">Item 2</a></li>
+                    <li><a href="#" class="menu-item">Item 3</a></li>
+                    <li class="dropdown dropdown-right">
+                        <a href="#" class="menu-item">
+                            Item 4
+                        </a>
+                        <ul class="menu-right menu-left sample">
+                            <li><a href="#" class="menu-item">Item 4.1</a></li>
+                            <li><a href="#" class="menu-item">Item 4.2</a></li>
+                            <li><a href="#" class="menu-item">Item 4.3</a></li>
+                            <li><a href="#" class="menu-item">Item 4.4</a></li>
+                            <li><a href="#" class="menu-item">Item 4.5</a></li>
+                            <li><a href="#" class="menu-item">Item 4.6</a></li>
+                            <li><a href="#" class="menu-item">Item 4.7</a></li>
+                            <li><a href="#" class="menu-item">Item 4.8</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu-item">Item 5</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="menu-item first-item">Mega Menu</a>
+                <div class="mega-menu sample">
+                    <div class="content">
+                        <div class="col">
+                            <section>
+                                <div class="menu-title">Category 1</div>
+                                <a href="#" class="img-wrapper"><span class="img"><img
+                                            src="https://picsum.photos/400?random=1" alt="Random Image" /></span></a>
+                                <p>Very beautiful.</p>
+                            </section>
+                        </div>
+                        <div class="col">
+                            <section>
+                                <div class="menu-title">Category 2</div>
+                                <ul class="mega-links">
+                                    <li><a href="#" class="menu-item">Item with a long menu name 1</a></li>
+                                    <li><a href="#" class="menu-item">Item with a long menu name 2</a></li>
+                                    <li><a href="#" class="menu-item">Item with a long menu name 3</a></li>
+                                    <li><a href="#" class="menu-item">Item with a long menu name 4</a></li>
+                                    <li><a href="#" class="menu-item">Item with a long menu name 5</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col">
+                            <section>
+                                <div class="menu-title">Category 3</div>
+                                <ul class="mega-links">
+                                    <li><a href="#" class="menu-item">Item 1</a></li>
+                                    <li><a href="#" class="menu-item">Item 2</a></li>
+                                    <li><a href="#" class="menu-item">Item 3</a></li>
+                                    <li><a href="#" class="menu-item">Item 4</a></li>
+                                    <li><a href="#" class="menu-item">Item 5</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col">
+                            <section>
+                                <div class="menu-title">Category 4</div>
+                                <ul class="mega-links">
+                                    <li><a href="#" class="menu-item">Item 1</a></li>
+                                    <li><a href="#" class="menu-item">Item 2</a></li>
+                                    <li><a href="#" class="menu-item">Item 3</a></li>
+                                    <li><a href="#" class="menu-item">Item 4</a></li>
+                                    <li><a href="#" class="menu-item">Item 5</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="menu-item first-item">Blog</a>
+                <div class="mega-menu blog sample">
+                    <div class="content">
+                        <div class="col">
+                            <a href="#" class="img-wrapper"><span class="img"><img
+                                        src="https://picsum.photos/400?random=2" alt="Random Image" /></span></a>
+                            <div class="menu-title">Your Title</div>
+                            <p>
+                                I looked at a lot of menus, something is wrong everywhere.
+                                In this menu, in my opinion, I took into account all the shortcomings.
+                                Simple and clear code in pure JS. No Jquery, Bootstrap and other libraries are closed
+                                when you click outside the area and press Esc.
+                            </p>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="img-wrapper"><span class="img"><img
+                                        src="https://picsum.photos/400?random=3" alt="Random Image" /></span></a>
+                            <div class="menu-title">Your Title</div>
+                            <p>
+                                I looked at a lot of menus, something is wrong everywhere.
+                                In this menu, in my opinion, I took into account all the shortcomings.
+                                Simple and clear code in pure JS. No Jquery, Bootstrap and other libraries are closed
+                                when you click outside the area and press Esc.
+                            </p>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="img-wrapper"><span class="img"><img
+                                        src="https://picsum.photos/400?random=4" alt="Random Image" /></span></a>
+                            <div class="menu-title">Your Title</div>
+                            <p>
+                                I looked at a lot of menus, something is wrong everywhere.
+                                In this menu, in my opinion, I took into account all the shortcomings.
+                                Simple and clear code in pure JS. No Jquery, Bootstrap and other libraries are closed
+                                when you click outside the area and press Esc.
+                            </p>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="img-wrapper"><span class="img"><img
+                                        src="https://picsum.photos/400?random=5" alt="Random Image" /></span></a>
+                            <div class="menu-title">Your Title</div>
+                            <p>
+                                I looked at a lot of menus, something is wrong everywhere.
+                                In this menu, in my opinion, I took into account all the shortcomings.
+                                Simple and clear code in pure JS. No Jquery, Bootstrap and other libraries are closed
+                                when you click outside the area and press Esc.
+                            </p>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#" class="menu-item first-item">Contact Us</a></li>
+        </ul>
+    </header>
+</body>
+
 </html>
