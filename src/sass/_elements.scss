@@ -1,0 +1,128 @@
+h1 {
+    font-size: 2.2rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+h3.bold,
+h3.font-weight-bold {
+    font-weight: 900;
+}
+
+h4 {
+    font-size: 1.8rem;
+    font-family: $gliko-font-family;
+    font-weight: 500;
+}
+
+h4.bold,
+h4.font-weight-bold {
+    font-weight: 900;
+}
+
+p,
+p.style-1 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 0.66rem;
+    margin-top: 0;
+}
+
+p.bold,
+p.font-weight-bold {
+    font-weight: bold;
+}
+
+p.style-2 {
+    font-size: 1.1rem;
+}
+
+p.style-2.bold,
+p.style-2.font-weight-bold {
+    font-weight: 900;
+}
+
+p.style-3 {
+    font-family: $gliko-font-family;
+    font-weight: 500;
+}
+
+p.style-3.bold,
+p.style-3.font-weight-bold {
+    font-weight: 900;
+}
+
+.sqs-button-element--primary,
+.btn-primary {
+    font-size: 1.3rem;
+    font-weight: 900;
+    border: .22rem solid $color-teal;
+    display: inline-block;
+    padding: 1.5rem 2.3rem;
+    color: $color-teal;
+    text-decoration: none;
+    border-radius: 12.3rem;
+    -moz-border-radius: 12.3rem;
+    white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: $color-teal;
+        color: $color-light-teal;
+    }
+}
+
+.sqs-button-element--secondary,
+.btn-secondary {
+    font-size: 1rem;
+    font-weight: 900;
+    display: inline-block;
+    padding: .83rem .55rem;
+    color: $color-teal;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        border-bottom: .22rem solid $color-teal;
+    }
+}
+
+.sqs-button-element--tertiary,
+.btn-tertiary {
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+    padding: .83rem 2rem;
+    background-color: $color-light-teal;
+    border-radius: 12.3rem;
+    -moz-border-radius: 12.3rem;
+    text-decoration: none;
+    color : $color-teal;
+    white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+}
+
+.misc {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.dropdown-nav-link {
+    color: $color-teal;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.22rem;
+    text-decoration: none;
+    display: inline-block;
+}

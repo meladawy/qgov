@@ -1,10 +1,50 @@
 @import "variables";
 @import "fonts";
 @import "grids";
+@import "elements";
 @import "components/menu";
 
+html {
+  font-size: 18px;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-style-italic {
+  font-style: italic;
+}
+
+.margin-top-50 {
+  margin-top: 2.77rem;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 2.77rem;
+}
+
+.margin-top-25 {
+  margin-top: 1.38rem;
+}
+
+.margin-bottom-25 {
+  margin-bottom: 1.38rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
 body,
-h1, h2, h3, h4, h5, h6,
 p,
 button,
 input,
