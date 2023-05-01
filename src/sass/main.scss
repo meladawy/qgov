@@ -86,5 +86,16 @@ section[data-current-styles*='"sectionTheme": "dark",'] {
     font-size: 3.33rem;
     line-height: 3.88rem;
     text-shadow: none;
+    text-align: left;
+  }
+
+  h1 em {
+    font-style: normal;
+  }
+
+  .content-wrapper {
+    min-height: 15rem;
+    display: flex;
+    align-items: center;
   }
 }
