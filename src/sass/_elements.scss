@@ -31,36 +31,44 @@ h4.font-weight-bold {
     font-weight: 900;
 }
 
-p,
+p.sqsrte-large,
 p.style-1 {
     font-size: 1.3rem;
-    line-height: 1.55rem;
+    line-height: 2.615rem;
     font-weight: 300;
     margin-bottom: 0.66rem;
     margin-top: 0;
 }
 
 p.bold,
-p.font-weight-bold {
+p.font-weight-bold,
+p.sqsrte-large > strong,
+p > style-1 > strong {
     font-weight: bold;
 }
 
+p,
 p.style-2 {
     font-size: 1.1rem;
+    line-height: 1.55rem;
 }
 
 p.style-2.bold,
-p.style-2.font-weight-bold {
+p.style-2.font-weight-bold,
+p > strong {
     font-weight: 900;
 }
 
-p.style-3 {
+p.style-3,
+p.sqsrte-small {
     font-family: $gliko-font-family;
     font-weight: 500;
+    line-height: 1.888rem;
 }
 
 p.style-3.bold,
-p.style-3.font-weight-bold {
+p.style-3.font-weight-bold,
+p.sqsrte-small > strong {
     font-weight: 900;
 }
 
