@@ -79,3 +79,12 @@ section,
 aside {
   font-family: $base-font-family;
 }
+
+// Overrides.
+section[data-current-styles*='"sectionTheme": "dark",'] {
+  h1 {
+    font-size: 3.33rem;
+    line-height: 3.88rem;
+    text-shadow: none;
+  }
+}

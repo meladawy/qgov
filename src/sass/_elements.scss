@@ -33,6 +33,7 @@ h4.font-weight-bold {
 p,
 p.style-1 {
     font-size: 1.3rem;
+    line-height: 1.55rem;
     font-weight: 300;
     margin-bottom: 0.66rem;
     margin-top: 0;
@@ -63,6 +64,7 @@ p.style-3.font-weight-bold {
 }
 
 .sqs-button-element--primary,
+#siteWrapper .sqs-button-element--primary,
 .btn-primary {
     font-size: 1.3rem;
     font-weight: 900;
