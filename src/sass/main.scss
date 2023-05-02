@@ -135,7 +135,7 @@ ol {
       border-radius: 999px
     }
 
-    &:first-child:before {
+    >:first-child:before {
       content: "";
     }
   }
