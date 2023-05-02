@@ -100,3 +100,43 @@ section[data-current-styles*='"sectionTheme": "dark",'] {
     padding: 0 !important;
   }
 }
+
+ol {
+  display: block;
+  padding: 0 0 0 4rem;
+  list-style: none;
+  counter-reset: numList;
+
+  li {
+    margin-right: 2.33rem;
+    position: relative;
+    margin-bottom: 1.66rem;
+    font-size: 1.33rem;
+    font-weight: 600;
+    line-height: 1.611rem;
+
+    &:before {
+      counter-increment: numList;
+      content: counter(numList);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      left: -4rem;
+      text-align: center;
+      color: $color-light-teal;
+      width: 2.33rem;
+      height: 2.33rem;
+      background: $color-teal;
+      -moz-border-radius: 999px;
+      border-radius: 999px
+    }
+
+    &:first-child:before {
+      content: "";
+    }
+  }
+}
