@@ -136,7 +136,7 @@ ol {
     }
 
     >:first-child:before {
-      content: "";
+      content: "" !important;
     }
   }
 }
