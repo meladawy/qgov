@@ -143,3 +143,11 @@ p.sqsrte-small > strong {
     text-decoration: none;
     display: inline-block;
 }
+
+pre code,
+.sqs-block-html pre code,
+.sqs-block-html .sqs-block-content pre code {
+    font-size: 1.111rem;
+    line-height: 1.555rem;
+    font-weight: 300;
+}
