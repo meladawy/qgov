@@ -30,6 +30,7 @@ h4 {
     font-size: 1.8rem;
     font-family: $gliko-font-family;
     font-weight: 500;
+    line-height: 2.111rem;
 }
 
 h4.bold,
@@ -40,7 +41,7 @@ h4.font-weight-bold {
 p.sqsrte-large,
 p.style-1 {
     font-size: 1.3rem;
-    line-height: 2.615rem;
+    line-height: 1.888rem;
     font-weight: 300;
     margin-bottom: 0.66rem;
     margin-top: 0;
@@ -56,13 +57,18 @@ p > style-1 > strong {
 p,
 p.style-2 {
     font-size: 1.1rem;
-    line-height: 1.55rem;
+    line-height: 1.388rem;
 }
 
 p.style-2.bold,
 p.style-2.font-weight-bold,
 p > strong {
     font-weight: 900;
+    line-height: 1.555rem;
+}
+
+p > em {
+    line-height: 1.555rem;
 }
 
 p.style-3,
