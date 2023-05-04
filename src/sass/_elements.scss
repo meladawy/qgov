@@ -118,6 +118,7 @@ p.sqsrte-small > strong {
     text-decoration: none;
     white-space: nowrap;
     transition: all 0.2s ease-in-out;
+    border-bottom: .22rem solid transparent;
 
     &:hover {
         border-bottom: .22rem solid $color-teal;
