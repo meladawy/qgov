@@ -113,7 +113,7 @@ p.sqsrte-small > strong {
     font-size: 1rem;
     font-weight: 900;
     display: inline-flex;
-    padding: .83rem .55rem;
+    padding: .83rem .55rem !important;
     color: $color-teal;
     text-decoration: none;
     white-space: nowrap;
@@ -133,7 +133,7 @@ p.sqsrte-small > strong {
     font-size: 1rem;
     font-weight: 500;
     display: inline-flex;
-    padding: .83rem 2rem;
+    padding: .83rem 2rem !important;
     background-color: $color-light-teal;
     border-radius: 12.3rem;
     -moz-border-radius: 12.3rem;
