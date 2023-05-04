@@ -91,7 +91,7 @@ p.sqsrte-small > strong {
     font-size: 1.3rem;
     font-weight: 900;
     border: .22rem solid $color-teal;
-    display: inline-block;
+    display: inline-flex;
     padding: 1.5rem 2.3rem !important;
     color: $color-teal;
     text-decoration: none;
@@ -112,7 +112,7 @@ p.sqsrte-small > strong {
 .btn-secondary {
     font-size: 1rem;
     font-weight: 900;
-    display: inline-block;
+    display: inline-flex;
     padding: .83rem .55rem;
     color: $color-teal;
     text-decoration: none;
@@ -121,6 +121,7 @@ p.sqsrte-small > strong {
 
     &:hover {
         border-bottom: .22rem solid $color-teal;
+        background: none;
     }
 }
 
@@ -130,7 +131,7 @@ p.sqsrte-small > strong {
 .btn-tertiary {
     font-size: 1rem;
     font-weight: 500;
-    display: inline-block;
+    display: inline-flex;
     padding: .83rem 2rem;
     background-color: $color-light-teal;
     border-radius: 12.3rem;
