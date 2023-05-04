@@ -85,13 +85,14 @@ p.sqsrte-small > strong {
 }
 
 .sqs-button-element--primary,
-#siteWrapper .sqs-button-element--primary,
+#siteWrapper.site-wrapper a.sqs-button-element--primary,
+#siteWrapper.site-wrapper .sqs-button-element--primary,
 .btn-primary {
     font-size: 1.3rem;
     font-weight: 900;
     border: .22rem solid $color-teal;
     display: inline-block;
-    padding: 1.5rem 2.3rem;
+    padding: 1.5rem 2.3rem !important;
     color: $color-teal;
     text-decoration: none;
     border-radius: 12.3rem;
@@ -106,6 +107,8 @@ p.sqsrte-small > strong {
 }
 
 .sqs-button-element--secondary,
+#siteWrapper.site-wrapper .sqs-button-element--secondary,
+#siteWrapper.site-wrapper a.sqs-button-element--secondary,
 .btn-secondary {
     font-size: 1rem;
     font-weight: 900;
@@ -122,6 +125,8 @@ p.sqsrte-small > strong {
 }
 
 .sqs-button-element--tertiary,
+#siteWrapper.site-wrapper .sqs-button-element--tertiary,
+#siteWrapper.site-wrapper a.sqs-button-element--tertiary,
 .btn-tertiary {
     font-size: 1rem;
     font-weight: 500;
