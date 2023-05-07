@@ -201,11 +201,12 @@ pre code,
     h3.accordion-item__title,
     .accordion-item__title-wrapper {
         color: $color-gray-70;
+        bottom: .5rem;
     }
 
     .accordion-divider {
         color: $color-gray-30;
-        height: 0.1111rem;
+        position: relative;
     }
 
     .plus > div {
@@ -220,11 +221,13 @@ pre code,
             font-family: "Font Awesome 5 Free"; /* Font Awesome's font-family for regular and solid icons */
             font-weight: 900; /* Font Awesome's font-weight for solid icons */
             margin-left: 8px; /* Optional: Add some space between the text and the icon */
+            color: $color-gray-70;
         }
     }
 
     li[data-is-open="true"] .plus::after {
         content: "\f077"; /* Font Awesome's unicode value for the chevron-up icon */
+        color: $color-teal;
     }
 
     .accordion-item__dropdown--open {
@@ -233,5 +236,20 @@ pre code,
         font-weight: 300;
         margin-bottom: 0.66rem;
         margin-top: 0;
+    }
+
+    .accordion-divider--top {
+        display: none;
+    }
+
+    li[data-is-open="true"] {
+        .accordion-divider {
+            display: none;
+        }
+
+        .accordion-item__click-target {
+            border-bottom: 2px solid $color-teal;
+            margin-bottom: 1.66rem;
+        }
     }
 }
