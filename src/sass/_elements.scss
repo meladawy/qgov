@@ -242,6 +242,14 @@ pre code,
         display: none;
     }
 
+    .accordion-item__click-target {
+        padding-top: 3.33rem !important;
+    }
+
+    .accordion-item__description {
+        padding-bottom: 0 !important;
+    }
+
     li[data-is-open="true"] {
         .accordion-divider {
             display: none;
