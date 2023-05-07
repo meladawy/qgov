@@ -1,4 +1,5 @@
-b, strong {
+b,
+strong {
     font-weight: 900;
 }
 
@@ -49,8 +50,8 @@ p.style-1 {
 
 p.bold,
 p.font-weight-bold,
-p.sqsrte-large > strong,
-p > style-1 > strong {
+p.sqsrte-large>strong,
+p>style-1>strong {
     font-weight: bold;
 }
 
@@ -62,12 +63,12 @@ p.style-2 {
 
 p.style-2.bold,
 p.style-2.font-weight-bold,
-p > strong {
+p>strong {
     font-weight: 900;
     line-height: 1.555rem;
 }
 
-p > em {
+p>em {
     line-height: 1.555rem;
 }
 
@@ -80,7 +81,7 @@ p.sqsrte-small {
 
 p.style-3.bold,
 p.style-3.font-weight-bold,
-p.sqsrte-small > strong {
+p.sqsrte-small>strong {
     font-weight: 900;
 }
 
@@ -89,6 +90,7 @@ p.sqsrte-small > strong {
 #siteWrapper.site-wrapper .sqs-button-element--primary,
 .btn-primary {
     font-size: 1.3rem;
+    line-height: 1.22rem;
     font-weight: 900;
     border: .22rem solid $color-teal;
     display: inline-flex;
@@ -102,7 +104,7 @@ p.sqsrte-small > strong {
 
     &:hover {
         background-color: $color-teal;
-        color: $color-light-teal;
+        color: $color-white;
     }
 }
 
@@ -111,6 +113,7 @@ p.sqsrte-small > strong {
 #siteWrapper.site-wrapper a.sqs-button-element--secondary,
 .btn-secondary {
     font-size: 1rem;
+    line-height: 1.22rem;
     font-weight: 900;
     display: inline-flex;
     padding: .83rem .55rem !important;
@@ -138,7 +141,7 @@ p.sqsrte-small > strong {
     border-radius: 12.3rem;
     -moz-border-radius: 12.3rem;
     text-decoration: none;
-    color : $color-teal;
+    color: $color-teal;
     white-space: nowrap;
     transition: all 0.2s ease-in-out;
 }
@@ -163,4 +166,28 @@ pre code,
     font-size: 1.111rem;
     line-height: 1.555rem;
     font-weight: 300;
+}
+
+.sqs-block-html a,
+a,
+.read-more-link,
+.entry-excerpt a,
+.blog-excerpt a,
+.eventlist-excerpt a,
+.sqs-block-newsletter .newsletter-form-header a,
+.sqs-block-newsletter .newsletter-form-footnote a,
+.sqs-block-newsletter .form-submission-text a,
+.sqs-block-form .form-submission-text a,
+.sqs-block-accordion .accordion-item__description a {
+    transition: background-size 200ms ease-out 0s,background-position 200ms ease-out 0s;
+
+    &:hover {
+        text-decoration: none;
+        background-image: linear-gradient(#d9eeea,#d9eeea),linear-gradient(rgba(0,89,97,0.7),rgba(0,89,97,0.7));
+        background-size: 100% 0.6em,100% 0.05em;
+        background-position: 0 100%,0 calc(100% - 0.1em);
+        background-repeat: no-repeat;
+        padding: 0 0 0.1em;
+        color: black;
+    }
 }
