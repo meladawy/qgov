@@ -248,8 +248,9 @@ pre code,
         }
 
         .accordion-item__click-target {
-            border-bottom: 2px solid $color-teal;
+            border-bottom: 4px solid $color-teal;
             margin-bottom: 1.66rem;
+            color: $color-teal;
         }
     }
 }
