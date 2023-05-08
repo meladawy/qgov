@@ -191,6 +191,7 @@ pre code,
     }
 }
 
+// Accodrion Styling.
 .accordion-items-container {
     .accordion-item__title-wrapper {
         font-size: 1.3rem;
@@ -262,3 +263,23 @@ pre code,
         }
     }
 }
+
+// Card styling
+ul.user-items-list-item-container {
+    &.user-items-list-simple {
+      li {
+        border-width: 3px 12px 12px 3px;
+        border-style: solid;
+        border-color: $color-light-teal;
+        border-radius: 30px;
+
+        .list-item-media-inner {
+          border-radius: 30px 20px 0px 0px;
+        }
+
+        .list-item-content {
+            padding: .5rem 2.77rem 2.77rem;
+        }
+      }
+    }
+  }
