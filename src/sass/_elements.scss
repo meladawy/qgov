@@ -273,10 +273,6 @@ ul.user-items-list-item-container {
         border-color: $color-light-teal;
         border-radius: 30px;
 
-        .list-item-content__title {
-            font-size: 1.8rem;
-        }
-
         .list-item-media-inner {
           border-radius: 30px 20px 0px 0px;
         }
@@ -289,9 +285,13 @@ ul.user-items-list-item-container {
   }
 
   #siteWrapper.site-wrapper ul.user-items-list-item-container.user-items-list-simple  a.sqs-button-element--primary {
-    font-size: 1.1rem;
-    line-height: 1.222rem;
     font-weight: 600;
     padding: 0 !important;
     border: none;
+
+    &:hover {
+        background: none;
+        color: $color-teal;
+        text-decoration: underline;
+    }
   }
