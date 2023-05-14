@@ -6,6 +6,16 @@ $link-color: #fff;
   display: none;
 }
 
+.header .header-announcement-bar-wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.tweak-fixed-header:not(.sqs-edit-mode-active):not(.sqs-site-styles-active) .header.shrink .header-announcement-bar-wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 // Mega menu styles
 .mega-menu {
   background-color: $color-teal;
