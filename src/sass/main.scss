@@ -12,11 +12,6 @@ body * {
   box-sizing: border-box;
 }
 
-div[data-fluid-engine=true] > .fluid-engine {
-  row-gap: 1.666rem;
-  column-gap: 1.666rem;
-}
-
 .font-weight-bold {
   font-weight: bold;
 }

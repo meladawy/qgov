@@ -16,6 +16,13 @@ $link-color: #fff;
   padding-bottom: 0;
 }
 
+@media only screen and (pointer: coarse) and (max-width: 1024px), screen and (max-width: 799px) {
+  .header .header-announcement-bar-wrapper {
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+  }
+}
+
 // Mega menu styles
 .mega-menu {
   background-color: $color-teal;
