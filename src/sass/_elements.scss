@@ -280,6 +280,10 @@ ul.user-items-list-item-container {
         .list-item-content {
             padding: .5rem 2.77rem 2.77rem;
         }
+
+        .list-item-content__description {
+            color: $color-gray-70;
+        }
       }
     }
   }

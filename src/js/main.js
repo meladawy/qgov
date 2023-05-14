@@ -2,140 +2,152 @@ document.addEventListener('DOMContentLoaded', function () {
   // Add custom login when window loaded using javascript and without using jQuery.
   const megaMenu = `
   <nav class="mega-menu">
-    <div class="menu-container">
-        <ul class="menu-items">
-            <li class="submenu-parent">
-                <a href="#">About</a>
-                <div class="submenu">
-                    <div class="submenu-links-wrapper">
-                        <div class="submenu-section">
-                            <a class="dropdown-nav-link" href="/about">What is Quantgov</a>
-                        </div>
-                        <div class="submenu-section">
-                            <a class="dropdown-nav-link" href="/our-work-in-action">Our work in action</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <li class="submenu-parent">
-                <a href="#">Data</a>
-                <div class="submenu">
-                    <div class="submenu-links-wrapper">
-                        <div class="submenu-section">
-                            <a class="dropdown-nav-link" href="https://www.reghub.ai/data/bulk">CSVs</a>
-                        </div>
-                        <div class="submenu-section">
-                            <a class="dropdown-nav-link" href="https://www.reghub.ai/data/custom">Interactive
-                                Downloader</a>
-                        </div>
-                        <div class="submenu-section" data-extra-details="submenu-section-apis">
-                            <p class="dropdown-nav-link">APIs <i class="fas fa-chevron-right"></i></p>
-                        </div>
-                    </div>
-
-                    <div class="submenu-extra-content-wrapper">
-                        <div class="submenu-extra-section-item" id="submenu-section-apis">
-                            <p>Our APIs</p>
-                            <ul>
-                                <li><a href="https://api.quantgov.org/swagger-ui.html">RegCensus API</a></li>
-                                <li><a href="https://github.com/QuantGov/regcensus-api-python">Python API
-                                        Package</a></li>
-                                <li><a href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a>
-                                </li>
-                                <li><a href="https://www.quantgov.org/api-python-library-full-tutorial">API Help
-                                        Guide</a></li>
-                                <li><a
-                                        href="https://new-website-files.s3.amazonaws.com/Regcensus+API+Patch+2.1.pdf">Patch
-                                        Notes</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Add more submenu-sections as needed -->
-                </div>
-            </li>
-            <li><a href="/visuals">Visuals</a></li>
-            <li><a href="/regcensus-explorer">State Snapshots</a></li>
-            <li class="submenu-parent">
-                <a href="#">AI-Readable Laws & Rules</a>
-                <div class="submenu right-menu">
-                    <div class="submenu-links-wrapper">
-                        <div class="submenu-section">
-                            <p>Do more with QuantGov</p>
-                            <p class="misc">
-                                Access pre-compiled downloads of cleaned text files and metadata. Or create your own
-                                customized download of documents and data from tens of millions of legal documents
-                                from around the world.
-                            </p>
-
-                            <div class="text-center">
-                                <a class="btn-primary margin-top-50" href="#">Login for full access</a>
-                                <a href="#" class="btn-secondary margin-top-25">Don't have an account? Sign up.</a>
+        <div class="menu-container">
+            <ul class="menu-items">
+                <li class="submenu-parent">
+                    <a href="#">About</a>
+                    <div class="submenu">
+                        <div class="submenu-links-wrapper">
+                            <div class="submenu-section">
+                                <a class="dropdown-nav-link" href="/about">What is Quantgov</a>
+                            </div>
+                            <div class="submenu-section">
+                                <a class="dropdown-nav-link" href="/our-work-in-action">Our work in action</a>
                             </div>
                         </div>
                     </div>
+                </li>
 
-                    <div class="submenu-extra-content-wrapper">
-                        <div class="submenu-extra-section-item" id="submenu-section-apis">
-                            <h3>Our APIs</h3>
-                            <ul>
-                                <li><a href="https://api.quantgov.org/swagger-ui.html">RegCensus API</a></li>
-                                <li><a href="https://github.com/QuantGov/regcensus-api-python">Python API
-                                        Package</a></li>
-                                <li><a href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a>
-                                </li>
-                                <li><a href="https://www.quantgov.org/api-python-library-full-tutorial">API Help
-                                        Guide</a></li>
-                                <li><a
-                                        href="https://new-website-files.s3.amazonaws.com/Regcensus+API+Patch+2.1.pdf">Patch
-                                        Notes</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="submenu-parent">
-                <a href="#">Get Involved</a>
-                <div class="submenu right-menu">
-                    <div class="submenu-links-wrapper">
-                        <div class="submenu-section" data-extra-details="submenu-section-join-research">
-                            <p class="dropdown-nav-link">Join Our Research <i class="fas fa-chevron-right"></i></p>
-                        </div>
-                        <div class="submenu-section" data-extra-details="submenu-section-learn-nlp">
-                            <p class="dropdown-nav-link">Learn Natural Language Processing <i class="fas fa-chevron-right"></i></p>
-                        </div>
-                    </div>
-
-                    <div class="submenu-extra-content-wrapper">
-                        <div class="submenu-extra-section-item" id="submenu-section-join-research">
-                            <p>Policy Analytics Research Program</p>
-                            <div class="misc">
-                                Cultivating research at the intersection of the social sciences, technology, and public policy.
+                <li class="submenu-parent">
+                    <a href="#">Data</a>
+                    <div class="submenu">
+                        <div class="submenu-links-wrapper">
+                            <div class="submenu-section">
+                                <a class="dropdown-nav-link" href="https://www.reghub.ai/data/bulk">CSVs</a>
                             </div>
-                            <ul>
-                                <li><a href="https://api.quantgov.org/swagger-ui.html">Program Overview</a></li>
-                                <li><a href="https://github.com/QuantGov/regcensus-api-python">Student Application</a></li>
-                                <li><a href="https://github.com/QuantGov/regcensus-api-client-R">Research Proposal</a>
-                                </li>
-                            </ul>
+                            <div class="submenu-section">
+                                <a class="dropdown-nav-link" href="https://www.reghub.ai/data/custom">Interactive
+                                    Downloader</a>
+                            </div>
+                            <div class="submenu-section" data-extra-details="submenu-section-apis">
+                                <p class="dropdown-nav-link">APIs <i class="fas fa-chevron-right"></i></p>
+                            </div>
+                            <div class="submenu-section" data-extra-details="submenu-section-documentation">
+                                <p class="dropdown-nav-link">Documentation <i class="fas fa-chevron-right"></i></p>
+                            </div>
                         </div>
 
-                        <div class="submenu-extra-section-item" id="submenu-section-learn-nlp">
-                            <p>How to use the platform</p>
-                            <ul>
-                                <li><a href="https://api.quantgov.org/swagger-ui.html">Platform Tutorial</a></li>
-                                <li><a href="https://github.com/QuantGov/regcensus-api-python">Platform Overview</a></li>
-                                <li><a href="https://github.com/QuantGov/regcensus-api-client-R">Github Repository</a>
-                                </li>
-                            </ul>
+                        <div class="submenu-extra-content-wrapper">
+                            <div class="submenu-extra-section-item" id="submenu-section-apis">
+                                <p class="style-1">Our APIs</p>
+                                <ul>
+                                    <li><a href="https://api.quantgov.org/swagger-ui.html">RegCensus API</a></li>
+                                    <li><a href="https://github.com/QuantGov/regcensus-api-python">Python API
+                                            Package</a></li>
+                                    <li><a href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a>
+                                    </li>
+                                    <li><a href="https://www.quantgov.org/api-python-library-full-tutorial">API Help
+                                            Guide</a></li>
+                                    <li><a
+                                            href="https://new-website-files.s3.amazonaws.com/Regcensus+API+Patch+2.1.pdf">Patch
+                                            Notes</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu-extra-section-item" id="submenu-section-documentation">
+                                <p class="style-1">Guides and Docs</p>
+                                <ul>
+                                    <li><a href="#">User's Guide</a></li>
+                                    <li><a href="#">Series Info</a></li>
+                                    <li><a href="/documentation">Documentation</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Add more submenu-sections as needed -->
+                    </div>
+                </li>
+                <li><a href="/visuals">Visuals</a></li>
+                <li><a href="/regcensus-explorer">State Snapshots</a></li>
+                <li class="submenu-parent">
+                    <a href="#">AI-Readable Laws & Rules</a>
+                    <div class="submenu right-menu">
+                        <div class="submenu-links-wrapper">
+                            <div class="submenu-section">
+                                <p class="style-1">Do more with QuantGov</p>
+                                <p class="misc">
+                                    Access pre-compiled downloads of cleaned text files and metadata. Or create your own
+                                    customized download of documents and data from tens of millions of legal documents
+                                    from around the world.
+                                </p>
+
+                                <div class="text-center">
+                                    <a class="btn-primary margin-top-50" href="#">Login for full access</a>
+                                    <a href="#" class="btn-secondary margin-top-25">Don't have an account? Sign up.</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="submenu-extra-content-wrapper">
+                            <div class="submenu-extra-section-item" id="submenu-section-apis">
+                                <p class="style-1">Our APIs</p>
+                                <ul>
+                                    <li><a href="https://api.quantgov.org/swagger-ui.html">RegCensus API</a></li>
+                                    <li><a href="https://github.com/QuantGov/regcensus-api-python">Python API
+                                            Package</a></li>
+                                    <li><a href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a>
+                                    </li>
+                                    <li><a href="https://www.quantgov.org/api-python-library-full-tutorial">API Help
+                                            Guide</a></li>
+                                    <li><a
+                                            href="https://new-website-files.s3.amazonaws.com/Regcensus+API+Patch+2.1.pdf">Patch
+                                            Notes</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <!-- Add more submenu-sections as needed -->
-                </div>
-            </li>
-        </ul>
-    </div>
-  </nav>
+                </li>
+                <li class="submenu-parent">
+                    <a href="#">Get Involved</a>
+                    <div class="submenu right-menu">
+                        <div class="submenu-links-wrapper">
+                            <div class="submenu-section" data-extra-details="submenu-section-join-research">
+                                <p class="dropdown-nav-link">Join Our Research <i class="fas fa-chevron-right"></i></p>
+                            </div>
+                            <div class="submenu-section" data-extra-details="submenu-section-learn-nlp">
+                                <p class="dropdown-nav-link">Learn Natural Language Processing <i class="fas fa-chevron-right"></i></p>
+                            </div>
+                        </div>
+
+                        <div class="submenu-extra-content-wrapper">
+                            <div class="submenu-extra-section-item" id="submenu-section-join-research">
+                                <p class="style-1">Policy Analytics Research Program</p>
+                                <div class="misc">
+                                    Cultivating research at the intersection of the social sciences, technology, and public policy.
+                                </div>
+                                <ul>
+                                    <li><a href="https://api.quantgov.org/swagger-ui.html">Program Overview</a></li>
+                                    <li><a href="https://github.com/QuantGov/regcensus-api-python">Student Application</a></li>
+                                    <li><a href="https://github.com/QuantGov/regcensus-api-client-R">Research Proposal</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="submenu-extra-section-item" id="submenu-section-learn-nlp">
+                                <p class="style-1">How to use the platform</p>
+                                <ul>
+                                    <li><a href="https://api.quantgov.org/swagger-ui.html">Platform Tutorial</a></li>
+                                    <li><a href="https://github.com/QuantGov/regcensus-api-python">Platform Overview</a></li>
+                                    <li><a href="https://github.com/QuantGov/regcensus-api-client-R">Github Repository</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Add more submenu-sections as needed -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 `;
 
   // If element with class '.header-nav' exists, replace it with megaMenu.

@@ -120,7 +120,7 @@ $link-color: #fff;
 
           .submenu-links-wrapper {
             background-color: $color-light-teal;
-            padding: 2.77rem 1.66rem;
+            padding: 1.66rem 1.66rem;
             border-radius: 10px;
             max-width: 400px;
 
@@ -131,7 +131,7 @@ $link-color: #fff;
 
           .submenu-extra-content-wrapper {
             background-color: $color-white;
-            padding: 50px 30px;
+            padding: 1.66rem 1.66rem;
             border-radius: 0 10px 10px 0;
             display: none;
             max-width: 350px;
@@ -155,6 +155,10 @@ $link-color: #fff;
 
               &.active {
                 display: block;
+
+                > p {
+                  margin-top: 1rem;
+                }
               }
             }
 
@@ -217,9 +221,11 @@ $link-color: #fff;
             vertical-align: middle;
             position: relative;
             cursor: pointer;
+            padding: 1.6rem 0;
 
             .dropdown-nav-link {
-              padding: 1.6rem 0;
+              margin: 0;
+              padding: 0;
             }
 
             &[data-extra-details].active::before {
@@ -227,6 +233,7 @@ $link-color: #fff;
               position: absolute;
               right: -30px;
               top: 50%;
+              transform: translateY(-50%);
               width: 0;
               height: 0;
               border-style: solid;
