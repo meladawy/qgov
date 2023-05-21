@@ -146,10 +146,10 @@ p.sqsrte-small>strong {
     transition: all 0.2s ease-in-out;
 }
 
-section[data-section-theme="black"] {
+#siteWrapper.site-wrapper section[data-section-theme="black"] {
     .sqs-button-element--primary,
-    #siteWrapper.site-wrapper a.sqs-button-element--primary,
-    #siteWrapper.site-wrapper .sqs-button-element--primary,
+    a.sqs-button-element--primary,
+    .sqs-button-element--primary,
     .btn-primary {
         border: .22rem solid $color-light-teal;
         background-color: $color-light-teal;
@@ -161,8 +161,8 @@ section[data-section-theme="black"] {
     }
 
     .sqs-button-element--secondary,
-    #siteWrapper.site-wrapper .sqs-button-element--secondary,
-    #siteWrapper.site-wrapper a.sqs-button-element--secondary,
+    .sqs-button-element--secondary,
+    a.sqs-button-element--secondary,
     .btn-secondary {
         color: $color-light-teal;
 
