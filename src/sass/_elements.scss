@@ -146,6 +146,33 @@ p.sqsrte-small>strong {
     transition: all 0.2s ease-in-out;
 }
 
+section[data-section-theme="black"] {
+    .sqs-button-element--primary,
+    #siteWrapper.site-wrapper a.sqs-button-element--primary,
+    #siteWrapper.site-wrapper .sqs-button-element--primary,
+    .btn-primary {
+        border: .22rem solid $color-light-teal;
+        background-color: $color-light-teal;
+        color: $color-teal;
+
+        &:hover {
+           opacity: .8;
+        }
+    }
+
+    .sqs-button-element--secondary,
+    #siteWrapper.site-wrapper .sqs-button-element--secondary,
+    #siteWrapper.site-wrapper a.sqs-button-element--secondary,
+    .btn-secondary {
+        color: $color-light-teal;
+
+        &:hover {
+            border-bottom: .22rem solid $color-light-teal;
+            background: none;
+        }
+    }
+}
+
 .misc {
     font-size: 1.1rem;
     font-weight: 300;
