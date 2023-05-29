@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Add subscribe action to the subscribe button.
+  newsletterSubscribeAction();
   // Add custom login when window loaded using javascript and without using jQuery.
   const megaMenu = `
   <nav class="mega-menu">
@@ -243,4 +245,37 @@ function deactivateCurrentMenuItem() {
       activeSubmenu[i].classList.remove('expanded');
     }
   }
+}
+
+function newsletterSubscribeAction() {
+    // Replace this with a selector to the form.
+    let formSelector = "form[id='5063243']";
+    // Replace this with the element you need to delete and replace with the success message.
+    let elementToReplaceAfterSuccess = ".newsletter-form-wrapper";
+    // Replace this with the success massage html markup.
+    let elementReplaceWith = '<div class="quantgov-newsletters-signup-thank-you-section"><p>Thank you for subscribing!</p></div>';
+
+    let form = document.querySelector(formSelector);
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      let formData = new FormData(form);
+
+      fetch(form.getAttribute("action"), {
+        method: 'POST',
+        body: formData,
+      })
+      .then(function(response) {
+        if (!response.ok) {
+          throw new Error("HTTP error " + response.status);
+        }
+        document.querySelector(elementToReplaceAfterSuccess).outerHTML = elementReplaceWith;
+      })
+      .catch(function() {
+        document.querySelector('.captchaHelp').textContent = 'Please fill the recaptcha checkbox to subscribe.';
+      });
+
+      return false;
+    });
 }
