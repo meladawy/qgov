@@ -253,7 +253,7 @@ function newsletterSubscribeAction() {
   // Replace this with the element you need to delete and replace with the success message.
   let elementToReplaceAfterSuccess = ".newsletter-form-wrapper";
   // Replace this with the success massage html markup.
-  let elementReplaceWith = '<div class="quantgov-newsletters-signup-thank-you-section"><h1>Thank you for subscribing!</h1></div>';
+  let elementReplaceWith = '<div class="quantgov-newsletters-signup-thank-you-section"><h1>Congratulations, you successfully signed up.</h1></div>';
 
   let form = document.querySelector(formSelector);
 
