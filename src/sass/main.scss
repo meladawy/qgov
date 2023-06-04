@@ -168,3 +168,12 @@ section.user-items-list-section .list-section-title p {
   font-size: 2rem;
   color: $color-teal;
 }
+
+ul[data-rte-list]  {
+  column-count: 2;
+}
+
+ul[data-rte-list] li>:first-child:before {
+  color: $color-teal;
+  font-size: 1.5rem;
+}
