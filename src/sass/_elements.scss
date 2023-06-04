@@ -331,3 +331,13 @@ ul.user-items-list-item-container {
         text-decoration: underline;
     }
   }
+
+.card-date-item {
+    display: flex;
+    justify-content: space-between;
+
+    .card-date-item .card-date-item--date {
+        font-weight: 400;
+    }
+}
+
