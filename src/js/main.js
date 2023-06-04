@@ -248,34 +248,41 @@ function deactivateCurrentMenuItem() {
 }
 
 function newsletterSubscribeAction() {
-    // Replace this with a selector to the form.
-    let formSelector = "form[id='5063243']";
-    // Replace this with the element you need to delete and replace with the success message.
-    let elementToReplaceAfterSuccess = ".newsletter-form-wrapper";
-    // Replace this with the success massage html markup.
-    let elementReplaceWith = '<div class="quantgov-newsletters-signup-thank-you-section"><p>Thank you for subscribing!</p></div>';
+  // Replace this with a selector to the form.
+  let formSelector = "form[id='5063243']";
+  // Replace this with the element you need to delete and replace with the success message.
+  let elementToReplaceAfterSuccess = ".newsletter-form-wrapper";
+  // Replace this with the success massage html markup.
+  let elementReplaceWith = '<div class="quantgov-newsletters-signup-thank-you-section"><h1>Thank you for subscribing!</h1></div>';
 
-    let form = document.querySelector(formSelector);
+  let form = document.querySelector(formSelector);
 
-    form.addEventListener("submit", function(e) {
-      e.preventDefault();
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-      let formData = new FormData(form);
+    // If form is not valid, return early to prevent sending the fetch request
+    if (!form.checkValidity()) {
+      return;
+    }
 
-      fetch(form.getAttribute("action"), {
-        method: 'POST',
-        body: formData,
-      })
-      .then(function(response) {
+    let formData = new FormData(form);
+
+    fetch(form.getAttribute("action"), {
+      method: 'POST',
+      body: formData,
+    })
+      .then(function (response) {
         if (!response.ok) {
           throw new Error("HTTP error " + response.status);
         }
+        // Hide element with class .fe-block-yui_3_17_2_1_1685352218518_7911
+        document.querySelector('.fe-block-yui_3_17_2_1_1685352218518_7911').style.display = 'none';
         document.querySelector(elementToReplaceAfterSuccess).outerHTML = elementReplaceWith;
       })
-      .catch(function() {
+      .catch(function () {
         document.querySelector('.captchaHelp').textContent = 'Please fill the recaptcha checkbox to subscribe.';
       });
 
-      return false;
-    });
+    return false;
+  });
 }
