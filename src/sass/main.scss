@@ -177,3 +177,11 @@ ul[data-rte-list] li>:first-child:before {
   color: $color-teal;
   font-size: 1.5rem;
 }
+
+.accordion-item__description {
+  max-width: 100% !important;
+
+  ul[data-rte-list]  {
+    column-count: 1;
+  }
+}
