@@ -302,7 +302,7 @@ ul.user-items-list-item-container {
       li {
         border-width: 3px 12px 12px 3px;
         border-style: solid;
-        border-color: $color-light-teal;
+        border-color: var(--list-section-simple-card-description-link-color);
         border-radius: 30px;
 
         .list-item-media-inner {
