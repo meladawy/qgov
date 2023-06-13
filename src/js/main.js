@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             <div class="submenu-extra-section-item" id="submenu-section-documentation">
                                 <p class="style-1">Guides and Docs</p>
                                 <ul>
-                                    <li><a href="#">User's Guide</a></li>
-                                    <li><a href="#">Series Info</a></li>
+                                    <li><a href="https://www.reghub.ai/guide">User's Guide</a></li>
+                                    <li><a href="https://www.reghub.ai/data/documentation">Series Info</a></li>
                                     <li><a href="/documentation">Documentation</a>
                                     </li>
                                 </ul>
@@ -137,9 +137,9 @@ document.addEventListener('DOMContentLoaded', function () {
                             <div class="submenu-extra-section-item" id="submenu-section-learn-nlp">
                                 <p class="style-1">How to use the platform</p>
                                 <ul>
-                                    <li><a href="https://api.quantgov.org/swagger-ui.html">Platform Tutorial</a></li>
-                                    <li><a href="https://github.com/QuantGov/regcensus-api-python">Platform Overview</a></li>
-                                    <li><a href="https://github.com/QuantGov/regcensus-api-client-R">Github Repository</a>
+                                    <li><a href="https://quantgov.github.io/quantgov-tutorial/pages/intro.html">Platform Tutorial</a></li>
+                                    <li><a href="https://quantgov-website-files.s3.amazonaws.com/file-backup/QuantGov-An-Overview.pdf">Platform Overview</a></li>
+                                    <li><a href="https://github.com/QuantGov/quantgov">Github Repository</a>
                                     </li>
                                 </ul>
                             </div>
