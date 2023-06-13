@@ -185,3 +185,20 @@ ul[data-rte-list] li>:first-child:before {
     column-count: 1;
   }
 }
+
+table {
+  .fas.fa-download {
+    color: $color-teal;
+  }
+
+  tr.parent {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.611rem;
+
+    td {
+      border-bottom: 0.11111 solid $color-gray-30;
+      padding-top: 3.33rem !important;
+    }
+  }
+}
