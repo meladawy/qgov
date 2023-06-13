@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </li>
                 <li><a href="/visuals">Visuals</a></li>
                 <li><a href="/regcensus-explorer">State Snapshots</a></li>
-                <li class="submenu-parent">
+                <li class="submenu-parent" style="display:none;">
                     <a href="#">AI-Readable Laws & Rules</a>
                     <div class="submenu right-menu">
                         <div class="submenu-links-wrapper">
