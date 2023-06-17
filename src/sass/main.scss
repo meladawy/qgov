@@ -197,8 +197,23 @@ table {
     line-height: 1.611rem;
 
     td {
-      border-bottom: 0.11111 solid $color-gray-30;
+      border-bottom: 0.11111rem solid $color-gray-30;
       padding-top: 3.33rem !important;
     }
+
+    &:hover {
+      background: none;
+    }
+  }
+
+  tr[class*="child-"] {
+    td {
+      padding-top: 1.66rem;
+    }
+  }
+
+  tr.parent:has(+ tr[class*="child"][style*="display: table-row"]) {
+    border-bottom: 0.2222rem solid $color-teal;
+    color: $color-teal;
   }
 }
