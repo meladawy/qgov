@@ -243,4 +243,12 @@ table {
     border-bottom: 0.2222rem solid $color-teal;
     color: $color-teal;
   }
+
+  tr[class*="child-"] {
+    font-size: 1.3rem;
+    line-height: 1.888rem;
+    font-weight: 300;
+    margin-bottom: 0.66rem;
+    margin-top: 0;
+  }
 }
