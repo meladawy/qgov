@@ -225,6 +225,7 @@ table {
       -webkit-mask-size: 100% 100%;
       mask-size: 100% 100%;
       content: " ";
+      background-color: $color-teal;
     }
   }
 
@@ -237,6 +238,7 @@ table {
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     content: " ";
+    background-color: $color-teal;
   }
 
   tr.parent:has(+ tr[class*="child"][style*="display: table-row"]) td:nth-child(1) span.plus {
