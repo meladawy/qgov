@@ -256,8 +256,8 @@ table {
     color: $color-teal;
   }
 
-  tr[class*="child-"] {
-    font-size: 1.3rem;
+  tr[class*="child-"] * {
+    font-size: 1.3rem !important;
     line-height: 1.888rem;
     font-weight: 300;
     margin-bottom: 0.66rem;
