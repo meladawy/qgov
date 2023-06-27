@@ -181,10 +181,13 @@ $link-color: #fff;
               }
             }
 
+            .submenu-extra-section-item .misc {
+              margin-bottom: 1.38rem;
+            }
+
             .submenu-extra-section-item ul {
               flex-direction: column;
               display: inline-block;
-              margin-top: 1.38rem;
 
               > li {
                 padding-bottom: 10px;
