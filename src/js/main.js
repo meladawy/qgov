@@ -159,60 +159,102 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.header-nav').style.display = 'block';
   }
 
-  // Get all submenu-section elements
-  var submenuSections = document.querySelectorAll('.submenu-section');
+ // Get all submenu-section elements
+var submenuSections = document.querySelectorAll('.submenu-section');
 
-  // Loop through submenu-section elements and add click event listeners
-  for (var i = 0; i < submenuSections.length; i++) {
-    submenuSections[i].addEventListener('click', function (e) {
-      deactivateCurrentMenuItem();
-      // Get data-extra-details value from the clicked submenu-section
-      var extraDetailsId = e.currentTarget.getAttribute('data-extra-details');
-      // Add active class to the clicked submenu-section and remove active class from all other submenu-section elements
-      for (var k = 0; k < submenuSections.length; k++) {
-        if (submenuSections[k].getAttribute('data-extra-details') !== extraDetailsId) {
-          submenuSections[k].classList.remove('active');
-        }
-      }
-      e.currentTarget.classList.toggle('active');
-
-      // Remove active class from all submenu-extra-section-item elements except the target element
-      var extraSectionItems = document.querySelectorAll('.submenu-extra-section-item');
-      for (var j = 0; j < extraSectionItems.length; j++) {
-        if (extraSectionItems[j].id !== extraDetailsId) {
-          extraSectionItems[j].classList.remove('active');
-        }
-      }
-
-      // Toggle active class on the target element
-      var targetElement = document.getElementById(extraDetailsId);
-      if (targetElement) {
-        targetElement.classList.toggle('active');
-      }
-
-      // Toggle active class on the submenu-extra-content-wrapper element
-      // And targetElement has attribute data-extra-details.
-      if (targetElement && targetElement.classList.contains('active') && e.currentTarget.getAttribute('data-extra-details')) {
-        var submenuLinksWrapper = e.currentTarget.closest('.submenu-links-wrapper');
-        var extraContentWrapper = e.currentTarget.closest('.submenu').querySelectorAll('.submenu-extra-content-wrapper')[0];
-
-        console.log(extraContentWrapper);
-        if (extraContentWrapper) {
-          extraContentWrapper.classList.add('active');
-        }
-
-        if (submenuLinksWrapper) {
-          submenuLinksWrapper.classList.add('expanded');
-        }
-
-        if (e.currentTarget.closest('.submenu')) {
-          e.currentTarget.closest('.submenu').classList.add('expanded');
-        }
-      } else {
-        deactivateCurrentMenuItem();
-      }
-    });
+// Function to deactivate active menus
+function deactivateMenu(e) {
+  deactivateCurrentMenuItem();
+  var extraDetailsId = e.currentTarget.getAttribute('data-extra-details');
+  for (var k = 0; k < submenuSections.length; k++) {
+    if (submenuSections[k].getAttribute('data-extra-details') !== extraDetailsId) {
+      submenuSections[k].classList.remove('active');
+    }
   }
+
+  var extraSectionItems = document.querySelectorAll('.submenu-extra-section-item');
+  for (var j = 0; j < extraSectionItems.length; j++) {
+    if (extraSectionItems[j].id !== extraDetailsId) {
+      extraSectionItems[j].classList.remove('active');
+    }
+  }
+
+  var targetElement = document.getElementById(extraDetailsId);
+  if (targetElement) {
+    targetElement.classList.remove('active');
+  }
+
+  var submenuLinksWrapper = e.currentTarget.closest('.submenu-links-wrapper');
+  var extraContentWrapper = e.currentTarget.closest('.submenu').querySelectorAll('.submenu-extra-content-wrapper')[0];
+
+  if (extraContentWrapper) {
+    extraContentWrapper.classList.remove('active');
+  }
+
+  if (submenuLinksWrapper) {
+    submenuLinksWrapper.classList.remove('expanded');
+  }
+
+  if (e.currentTarget.closest('.submenu')) {
+    e.currentTarget.closest('.submenu').classList.remove('expanded');
+  }
+}
+
+// Loop through submenu-section elements and add hover event listeners
+for (var i = 0; i < submenuSections.length; i++) {
+  submenuSections[i].addEventListener('mouseenter', function (e) {
+    deactivateCurrentMenuItem();
+    // Get data-extra-details value from the hovered submenu-section
+    var extraDetailsId = e.currentTarget.getAttribute('data-extra-details');
+    // Add active class to the hovered submenu-section and remove active class from all other submenu-section elements
+    for (var k = 0; k < submenuSections.length; k++) {
+      if (submenuSections[k].getAttribute('data-extra-details') !== extraDetailsId) {
+        submenuSections[k].classList.remove('active');
+      }
+    }
+    e.currentTarget.classList.add('active');
+
+    // Remove active class from all submenu-extra-section-item elements except the target element
+    var extraSectionItems = document.querySelectorAll('.submenu-extra-section-item');
+    for (var j = 0; j < extraSectionItems.length; j++) {
+      if (extraSectionItems[j].id !== extraDetailsId) {
+        extraSectionItems[j].classList.remove('active');
+      }
+    }
+
+    // Add active class on the target element
+    var targetElement = document.getElementById(extraDetailsId);
+    if (targetElement) {
+      targetElement.classList.add('active');
+    }
+
+    // Add active class on the submenu-extra-content-wrapper element
+    // And targetElement has attribute data-extra-details.
+    if (targetElement && targetElement.classList.contains('active') && e.currentTarget.getAttribute('data-extra-details')) {
+      var submenuLinksWrapper = e.currentTarget.closest('.submenu-links-wrapper');
+      var extraContentWrapper = e.currentTarget.closest('.submenu').querySelectorAll('.submenu-extra-content-wrapper')[0];
+
+      if (extraContentWrapper) {
+        extraContentWrapper.classList.add('active');
+      }
+
+      if (submenuLinksWrapper) {
+        submenuLinksWrapper.classList.add('expanded');
+      }
+
+      if (e.currentTarget.closest('.submenu')) {
+        e.currentTarget.closest('.submenu').classList.add('expanded');
+      }
+    } else {
+      deactivateCurrentMenuItem();
+    }
+  });
+
+  submenuSections[i].addEventListener('mouseleave', function (e) {
+    // deactivateMenu(e);
+  });
+}
+
 
 });
 
@@ -257,32 +299,34 @@ function newsletterSubscribeAction() {
 
   let form = document.querySelector(formSelector);
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-    // If form is not valid, return early to prevent sending the fetch request
-    if (!form.checkValidity()) {
-      return;
-    }
+      // If form is not valid, return early to prevent sending the fetch request
+      if (!form.checkValidity()) {
+        return;
+      }
 
-    let formData = new FormData(form);
+      let formData = new FormData(form);
 
-    fetch(form.getAttribute("action"), {
-      method: 'POST',
-      body: formData,
-    })
-      .then(function (response) {
-        if (!response.ok) {
-          throw new Error("HTTP error " + response.status);
-        }
-        // Hide element with class .fe-block-yui_3_17_2_1_1685352218518_7911
-        document.querySelector('.fe-block-yui_3_17_2_1_1685352218518_7911').style.display = 'none';
-        document.querySelector(elementToReplaceAfterSuccess).outerHTML = elementReplaceWith;
+      fetch(form.getAttribute("action"), {
+        method: 'POST',
+        body: formData,
       })
-      .catch(function () {
-        document.querySelector('.captchaHelp').textContent = 'Please fill the recaptcha checkbox to subscribe.';
-      });
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error("HTTP error " + response.status);
+          }
+          // Hide element with class .fe-block-yui_3_17_2_1_1685352218518_7911
+          document.querySelector('.fe-block-yui_3_17_2_1_1685352218518_7911').style.display = 'none';
+          document.querySelector(elementToReplaceAfterSuccess).outerHTML = elementReplaceWith;
+        })
+        .catch(function () {
+          document.querySelector('.captchaHelp').textContent = 'Please fill the recaptcha checkbox to subscribe.';
+        });
 
-    return false;
-  });
+      return false;
+    });
+  }
 }

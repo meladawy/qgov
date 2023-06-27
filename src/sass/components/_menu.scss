@@ -137,7 +137,7 @@ $link-color: #fff;
 
           .submenu-links-wrapper {
             background-color: $color-light-teal;
-            padding: 1.66rem 1.66rem;
+            padding: 1.1777rem 2.3rem 1.1777rem 2.3rem;
             border-radius: 10px;
             max-width: 400px;
 
@@ -148,10 +148,11 @@ $link-color: #fff;
 
           .submenu-extra-content-wrapper {
             background-color: $color-white;
-            padding: 1.66rem 1.66rem;
+            padding: 1.66rem 2.77rem;
             border-radius: 0 10px 10px 0;
             display: none;
             max-width: 350px;
+            color: $color-gray-70;
 
             & + .submenu-links-wrapper {
               max-width: 250px;
@@ -174,7 +175,8 @@ $link-color: #fff;
                 display: block;
 
                 > p {
-                  margin-top: 1rem;
+                  margin-top: 0;
+                  margin-bottom: 1.37rem;
                 }
               }
             }
@@ -182,7 +184,7 @@ $link-color: #fff;
             .submenu-extra-section-item ul {
               flex-direction: column;
               display: inline-block;
-              margin-top: .66rem;
+              margin-top: 1.38rem;
 
               > li {
                 padding-bottom: 10px;
@@ -248,7 +250,7 @@ $link-color: #fff;
             &[data-extra-details].active::before {
               content: "";
               position: absolute;
-              right: -30px;
+              right: -2.3rem;
               top: 50%;
               transform: translateY(-50%);
               width: 0;
