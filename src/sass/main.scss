@@ -170,7 +170,15 @@ section.user-items-list-section .list-section-title p {
 }
 
 ul[data-rte-list]  {
-  column-count: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 3rem;
+
+  li {
+    flex: 1 0 40%;
+  }
 }
 
 ul[data-rte-list] li>:first-child:before {
