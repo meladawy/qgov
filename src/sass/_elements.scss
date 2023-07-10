@@ -106,6 +106,11 @@ p.sqsrte-small>strong {
     -moz-border-radius: 12.3rem;
     white-space: nowrap;
     transition: all 0.2s ease-in-out;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: wrap;
 
     &:hover {
         background-color: $color-teal;
@@ -127,6 +132,11 @@ p.sqsrte-small>strong {
     white-space: nowrap;
     transition: all 0.2s ease-in-out;
     border-bottom: .22rem solid transparent;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: wrap;
 
     &:hover {
         border-bottom: .22rem solid $color-teal;
@@ -149,6 +159,11 @@ p.sqsrte-small>strong {
     color: $color-teal;
     white-space: nowrap;
     transition: all 0.2s ease-in-out;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: wrap;
 }
 
 #siteWrapper.site-wrapper section[data-section-theme="black"] {
