@@ -174,7 +174,7 @@ ul[data-rte-list]  {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-  gap: 3rem;
+  column-gap: 3rem;
 
   li {
     flex: 1 0 40%;
