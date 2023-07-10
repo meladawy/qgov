@@ -127,9 +127,9 @@ document.addEventListener('DOMContentLoaded', function () {
                                     Cultivating research at the intersection of the social sciences, technology, and public policy.
                                 </div>
                                 <ul>
-                                    <li><a href="https://api.quantgov.org/swagger-ui.html">Program Overview</a></li>
-                                    <li><a href="https://github.com/QuantGov/regcensus-api-python">Student Application</a></li>
-                                    <li><a href="https://github.com/QuantGov/regcensus-api-client-R">Research Proposal</a>
+                                    <li><a href="/policy-analytics-program">Program Overview</a></li>
+                                    <li><a href="/policy-research-program">Student Application</a></li>
+                                    <li><a href="/research-proposals">Research Proposal</a>
                                     </li>
                                 </ul>
                             </div>
