@@ -217,6 +217,7 @@ table {
   tr[class*="child-"] {
     td {
       padding-top: 1.66rem;
+      border-bottom: none;
     }
   }
 
@@ -235,6 +236,10 @@ table {
       content: " ";
       background-color: $color-teal;
     }
+  }
+
+  tr.parent td:nth-child(1) {
+    width: 50px;
   }
 
   tr.parent td:nth-child(1) span.plus {
