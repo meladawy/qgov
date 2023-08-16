@@ -70,9 +70,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 </li>
                 <li><a href="/visuals">Visuals</a></li>
                 <li><a href="/regcensus-explorer">State Snapshots</a></li>
-                <li class="submenu-parent" style="display:none;">
-                    <a href="#">AI-Readable Laws & Rules</a>
-                    <div class="submenu right-menu">
+                <li class="submenu-parent">
+                    <a href="https://www.reghub.ai/">AI-Readable Laws & Rules</a>
+                    <div class="submenu right-menu" style="display: none;">
                         <div class="submenu-links-wrapper">
                             <div class="submenu-section">
                                 <p class="style-1">Do more with QuantGov</p>
