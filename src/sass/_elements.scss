@@ -118,6 +118,16 @@ p.sqsrte-small>strong {
     }
 }
 
+#siteWrapper.site-wrapper .user-items-list .sqs-button-element--primary,
+#siteWrapper.site-wrapper .user-items-list a.sqs-button-element--primary {
+    justify-content: flex-start;
+}
+
+#siteWrapper.site-wrapper .user-items-list .sqs-button-element--secondary,
+#siteWrapper.site-wrapper .user-items-list a.sqs-button-element--secondary {
+    justify-content: flex-start;
+}
+
 .sqs-button-element--secondary,
 #siteWrapper.site-wrapper .sqs-button-element--secondary,
 #siteWrapper.site-wrapper a.sqs-button-element--secondary,
