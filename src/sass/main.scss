@@ -291,3 +291,10 @@ footer {
     }
   }
 }
+
+.user-items-list-section.full-bleed-section {
+  .list-section-title,
+  .user-items-list-item-container {
+    max-width: 82vw;
+  }
+}
