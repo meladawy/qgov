@@ -152,6 +152,91 @@ document.addEventListener('DOMContentLoaded', function () {
     </nav>
 `;
 
+  const megaMenuMobile = `
+<nav class="mega-menu">
+    <div class="menu-container">
+        <ul class="menu-items">
+            <li>
+                <a class="" href="#">About <i class="fas fa-chevron-right"></i></a>
+
+                <ul class="submenu-section">
+                    <li>
+                        <a class="" href="/about">What is Quantgov</a>
+                    </li>
+                    <li>
+                        <a class="" href="/our-work-in-action">Our work in action</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a class="" href="#">Data <i class="fas fa-chevron-right"></i></a>
+                <ul class="submenu-links-wrapper">
+                    <li class="submenu-section">
+                        <a class="" href="https://www.reghub.ai/data/bulk">CSVs</a>
+                    </li>
+                    <li class="submenu-section">
+                        <a class="" href="https://www.reghub.ai/data/custom">Interactive Downloader</a>
+                    </li>
+                    <li class="submenu-section" data-extra-details="submenu-section-apis">
+                        <a href="#" class="">APIs <i class="fas fa-chevron-right"></i></a>
+                        <ul class="submenu-extra-section-item">
+                            <li><a href="https://api.quantgov.org/swagger-ui.html">RegCensus API</a></li>
+                            <li><a href="https://github.com/QuantGov/regcensus-api-python">Python API Package</a></li>
+                            <li><a href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a></li>
+                            <li><a href="https://www.quantgov.org/api-python-library-full-tutorial">API Help Guide</a>
+                            </li>
+                            <li><a href="https://new-website-files.s3.amazonaws.com/Regcensus+API+Patch+2.1.pdf">Patch
+                                    Notes</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu-section" data-extra-details="submenu-section-documentation">
+                        <a href="#" class="">Documentation <i class="fas fa-chevron-right"></i></a>
+                        <ul class="submenu-extra-section-item">
+                            <li><a href="https://www.reghub.ai/guide">User's Guide</a></li>
+                            <li><a href="https://www.reghub.ai/data/documentation">Series Info</a></li>
+                            <li><a href="/documentation">Documentation</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/visuals">Visuals</a></li>
+            <li><a href="/regcensus-explorer">State Snapshots</a></li>
+            <li>
+                <a href="https://www.reghub.ai/">AI-Readable Laws & Rules</a>
+            </li>
+
+            <li>
+                <a class="" href="#">Get Involved <i class="fas fa-chevron-right"></i></a>
+
+                <ul class="submenu-links-wrapper">
+                    <li class="submenu-section" data-extra-details="submenu-section-join-research">
+                        <a href="#" class="">Join Our Research <i class="fas fa-chevron-right"></i></a>
+                        <ul class="submenu-extra-section-item" id="submenu-section-join-research">
+                            <li><a href="/policy-analytics-program">Program Overview</a></li>
+                            <li><a href="/policy-research-program">Student Application</a></li>
+                            <li><a href="/research-proposals">Research Proposal</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu-section" data-extra-details="submenu-section-learn-nlp">
+                        <a href="#" class="">Learn Natural Language Processing <i class="fas fa-chevron-right"></i></a>
+                        <ul class="submenu-extra-section-item" id="submenu-section-learn-nlp">
+                            <li><a href="https://quantgov.github.io/quantgov-tutorial/pages/intro.html">Platform
+                                    Tutorial</a></li>
+                            <li><a
+                                    href="https://quantgov-website-files.s3.amazonaws.com/file-backup/QuantGov-An-Overview.pdf">Platform
+                                    Overview</a></li>
+                            <li><a href="https://github.com/QuantGov/quantgov">Github Repository</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+  `;
+
   // If element with class '.header-nav' exists, replace it with megaMenu.
   if (document.querySelector('.header-nav')) {
     document.querySelector('.header-nav').innerHTML = megaMenu;
@@ -159,62 +244,31 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.header-nav').style.display = 'block';
   }
 
- // Get all submenu-section elements
-var submenuSections = document.querySelectorAll('.submenu-section');
+  // Replace .header-menu-nav-list with megaMenu.
+  if (document.querySelector('.header-menu-nav-list')) {
+    // Create a temporary element to host the megaMenu HTML
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = megaMenuMobile;
 
-// Function to deactivate active menus
-function deactivateMenu(e) {
-  deactivateCurrentMenuItem();
-  var extraDetailsId = e.currentTarget.getAttribute('data-extra-details');
-  for (var k = 0; k < submenuSections.length; k++) {
-    if (submenuSections[k].getAttribute('data-extra-details') !== extraDetailsId) {
-      submenuSections[k].classList.remove('active');
-    }
+    // Extract .menu-container content from the temporary element
+    const menuContainerContent = tempDiv.querySelector('.menu-container').innerHTML;
+    // Get element with class 'menu-container' from megaMenu variable.
+    document.querySelector('.header-menu-nav-list').innerHTML = menuContainerContent;
   }
 
-  var extraSectionItems = document.querySelectorAll('.submenu-extra-section-item');
-  for (var j = 0; j < extraSectionItems.length; j++) {
-    if (extraSectionItems[j].id !== extraDetailsId) {
-      extraSectionItems[j].classList.remove('active');
-    }
-  }
+  // Get all submenu-section elements
+  var submenuSections = document.querySelectorAll('.mega-menu .submenu-section');
 
-  var targetElement = document.getElementById(extraDetailsId);
-  if (targetElement) {
-    targetElement.classList.remove('active');
-  }
-
-  var submenuLinksWrapper = e.currentTarget.closest('.submenu-links-wrapper');
-  var extraContentWrapper = e.currentTarget.closest('.submenu').querySelectorAll('.submenu-extra-content-wrapper')[0];
-
-  if (extraContentWrapper) {
-    extraContentWrapper.classList.remove('active');
-  }
-
-  if (submenuLinksWrapper) {
-    submenuLinksWrapper.classList.remove('expanded');
-  }
-
-  if (e.currentTarget.closest('.submenu')) {
-    e.currentTarget.closest('.submenu').classList.remove('expanded');
-  }
-}
-
-// Loop through submenu-section elements and add hover event listeners
-for (var i = 0; i < submenuSections.length; i++) {
-  submenuSections[i].addEventListener('mouseenter', function (e) {
+  // Function to deactivate active menus
+  function deactivateMenu(e) {
     deactivateCurrentMenuItem();
-    // Get data-extra-details value from the hovered submenu-section
     var extraDetailsId = e.currentTarget.getAttribute('data-extra-details');
-    // Add active class to the hovered submenu-section and remove active class from all other submenu-section elements
     for (var k = 0; k < submenuSections.length; k++) {
       if (submenuSections[k].getAttribute('data-extra-details') !== extraDetailsId) {
         submenuSections[k].classList.remove('active');
       }
     }
-    e.currentTarget.classList.add('active');
 
-    // Remove active class from all submenu-extra-section-item elements except the target element
     var extraSectionItems = document.querySelectorAll('.submenu-extra-section-item');
     for (var j = 0; j < extraSectionItems.length; j++) {
       if (extraSectionItems[j].id !== extraDetailsId) {
@@ -222,41 +276,113 @@ for (var i = 0; i < submenuSections.length; i++) {
       }
     }
 
-    // Add active class on the target element
     var targetElement = document.getElementById(extraDetailsId);
     if (targetElement) {
-      targetElement.classList.add('active');
+      targetElement.classList.remove('active');
     }
 
-    // Add active class on the submenu-extra-content-wrapper element
-    // And targetElement has attribute data-extra-details.
-    if (targetElement && targetElement.classList.contains('active') && e.currentTarget.getAttribute('data-extra-details')) {
-      var submenuLinksWrapper = e.currentTarget.closest('.submenu-links-wrapper');
-      var extraContentWrapper = e.currentTarget.closest('.submenu').querySelectorAll('.submenu-extra-content-wrapper')[0];
+    var submenuLinksWrapper = e.currentTarget.closest('.submenu-links-wrapper');
+    var extraContentWrapper = e.currentTarget.closest('.submenu').querySelectorAll('.submenu-extra-content-wrapper')[0];
 
-      if (extraContentWrapper) {
-        extraContentWrapper.classList.add('active');
-      }
+    if (extraContentWrapper) {
+      extraContentWrapper.classList.remove('active');
+    }
 
-      if (submenuLinksWrapper) {
-        submenuLinksWrapper.classList.add('expanded');
-      }
+    if (submenuLinksWrapper) {
+      submenuLinksWrapper.classList.remove('expanded');
+    }
 
-      if (e.currentTarget.closest('.submenu')) {
-        e.currentTarget.closest('.submenu').classList.add('expanded');
-      }
-    } else {
+    if (e.currentTarget.closest('.submenu')) {
+      e.currentTarget.closest('.submenu').classList.remove('expanded');
+    }
+  }
+
+  // Loop through submenu-section elements and add hover event listeners
+  for (var i = 0; i < submenuSections.length; i++) {
+    submenuSections[i].addEventListener('mouseenter', function (e) {
       deactivateCurrentMenuItem();
-    }
-  });
+      // Get data-extra-details value from the hovered submenu-section
+      var extraDetailsId = e.currentTarget.getAttribute('data-extra-details');
+      // Add active class to the hovered submenu-section and remove active class from all other submenu-section elements
+      for (var k = 0; k < submenuSections.length; k++) {
+        if (submenuSections[k].getAttribute('data-extra-details') !== extraDetailsId) {
+          submenuSections[k].classList.remove('active');
+        }
+      }
+      e.currentTarget.classList.add('active');
 
-  submenuSections[i].addEventListener('mouseleave', function (e) {
-    // deactivateMenu(e);
-  });
-}
+      // Remove active class from all submenu-extra-section-item elements except the target element
+      var extraSectionItems = document.querySelectorAll('.submenu-extra-section-item');
+      for (var j = 0; j < extraSectionItems.length; j++) {
+        if (extraSectionItems[j].id !== extraDetailsId) {
+          extraSectionItems[j].classList.remove('active');
+        }
+      }
 
+      // Add active class on the target element
+      var targetElement = document.getElementById(extraDetailsId);
+      if (targetElement) {
+        targetElement.classList.add('active');
+      }
+
+      // Add active class on the submenu-extra-content-wrapper element
+      // And targetElement has attribute data-extra-details.
+      if (targetElement && targetElement.classList.contains('active') && e.currentTarget.getAttribute('data-extra-details')) {
+        var submenuLinksWrapper = e.currentTarget.closest('.submenu-links-wrapper');
+        var extraContentWrapper = e.currentTarget.closest('.submenu').querySelectorAll('.submenu-extra-content-wrapper')[0];
+
+        if (extraContentWrapper) {
+          extraContentWrapper.classList.add('active');
+        }
+
+        if (submenuLinksWrapper) {
+          submenuLinksWrapper.classList.add('expanded');
+        }
+
+        if (e.currentTarget.closest('.submenu')) {
+          e.currentTarget.closest('.submenu').classList.add('expanded');
+        }
+      } else {
+        deactivateCurrentMenuItem();
+      }
+    });
+
+    submenuSections[i].addEventListener('mouseleave', function (e) {
+      // deactivateMenu(e);
+    });
+  }
+
+  // Mobile menu.
+  const menuLinks = document.querySelectorAll('nav.header-menu-nav-list > ul li a');
+
+  menuLinks.forEach(link => {
+      link.addEventListener('click', function(event) {
+          const siblingUl = link.nextElementSibling;
+
+          if (siblingUl && siblingUl.tagName === 'UL') {
+              event.preventDefault();
+              const parentLi = link.closest('li');
+              if (parentLi) {
+                  parentLi.classList.toggle('expanded');
+              }
+          }
+      });
+  });
 
 });
+
+// Function to check if an element is a descendant of another element
+function isDescendant(parent, child) {
+  let node = child.parentNode;
+  while (node !== null) {
+    if (node === parent) {
+      return true;
+    }
+    node = node.parentNode;
+  }
+  return false;
+}
+
 
 function deactivateCurrentMenuItem() {
   var activeSubmenuLinksWrapper = document.querySelectorAll('.submenu-links-wrapper.expanded');
