@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <ul>
                                     <li><a href="/policy-analytics-program">Program Overview</a></li>
                                     <li><a href="/policy-research-program">Student Application</a></li>
-                                    <li><a href="/research-proposals">Research Proposal</a>
+                                    <li><a href="/research-proposals">Research Proposal Application</a>
                                     </li>
                                 </ul>
                             </div>
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <ul>
                                     <li><a href="https://quantgov.github.io/quantgov-tutorial/pages/intro.html">Platform Tutorial</a></li>
                                     <li><a href="https://quantgov-website-files.s3.amazonaws.com/file-backup/QuantGov-An-Overview.pdf">Platform Overview</a></li>
-                                    <li><a href="https://github.com/QuantGov/quantgov">Github Repository</a>
+                                    <li><a href="https://github.com/QuantGov/quantgov">GitHub Repository</a>
                                     </li>
                                 </ul>
                             </div>
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <ul class="submenu-extra-section-item" id="submenu-section-join-research">
                             <li><a href="/policy-analytics-program">Program Overview</a></li>
                             <li><a href="/policy-research-program">Student Application</a></li>
-                            <li><a href="/research-proposals">Research Proposal</a></li>
+                            <li><a href="/research-proposals">Research Proposal Application</a></li>
                         </ul>
                     </li>
                     <li class="submenu-section" data-extra-details="submenu-section-learn-nlp">
@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <li><a
                                     href="https://quantgov-website-files.s3.amazonaws.com/file-backup/QuantGov-An-Overview.pdf">Platform
                                     Overview</a></li>
-                            <li><a href="https://github.com/QuantGov/quantgov">Github Repository</a></li>
+                            <li><a href="https://github.com/QuantGov/quantgov">GitHub Repository</a></li>
                         </ul>
                     </li>
                 </ul>
