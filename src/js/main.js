@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <div class="submenu-extra-section-item" id="submenu-section-apis">
                                 <p class="style-1">Our APIs</p>
                                 <ul>
-                                    <li><a href="https://api.quantgov.org/swagger-ui.html">RegCensus API</a></li>
+                                    <li><a href="https://api.quantgov.org/">RegCensus API</a></li>
                                     <li><a href="https://github.com/QuantGov/regcensus-api-python">Python API
                                             Package</a></li>
                                     <li><a href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a>
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <div class="submenu-extra-section-item" id="submenu-section-apis">
                                 <p class="style-1">Our APIs</p>
                                 <ul>
-                                    <li><a href="https://api.quantgov.org/swagger-ui.html">RegCensus API</a></li>
+                                    <li><a href="https://api.quantgov.org/">RegCensus API</a></li>
                                     <li><a href="https://github.com/QuantGov/regcensus-api-python">Python API
                                             Package</a></li>
                                     <li><a href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a>
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li class="submenu-section" data-extra-details="submenu-section-apis">
                         <a href="#" class="">APIs <i class="fas fa-chevron-right"></i></a>
                         <ul class="submenu-extra-section-item">
-                            <li><a href="https://api.quantgov.org/swagger-ui.html">RegCensus API</a></li>
+                            <li><a href="https://api.quantgov.org/">RegCensus API</a></li>
                             <li><a href="https://github.com/QuantGov/regcensus-api-python">Python API Package</a></li>
                             <li><a href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a></li>
                             <li><a href="https://www.quantgov.org/api-python-library-full-tutorial">API Help Guide</a>
