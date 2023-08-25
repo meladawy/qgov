@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                     Downloader</a>
                             </div>
                             <div class="submenu-section" data-extra-details="submenu-section-apis">
-                                <p class="dropdown-nav-link">APIs <i class="fas fa-chevron-right"></i></p>
+                                <p class="dropdown-nav-link">API <i class="fas fa-chevron-right"></i></p>
                             </div>
                             <div class="submenu-section" data-extra-details="submenu-section-documentation">
                                 <p class="dropdown-nav-link">Documentation <i class="fas fa-chevron-right"></i></p>
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                         <div class="submenu-extra-content-wrapper">
                             <div class="submenu-extra-section-item" id="submenu-section-apis">
-                                <p class="style-1">Our APIs</p>
+                                <p class="style-1">Our API</p>
                                 <ul>
                                     <li><a href="https://api.quantgov.org/">RegCensus API</a></li>
                                     <li><a href="https://github.com/QuantGov/regcensus-api-python">Python API
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                         <div class="submenu-extra-content-wrapper">
                             <div class="submenu-extra-section-item" id="submenu-section-apis">
-                                <p class="style-1">Our APIs</p>
+                                <p class="style-1">Our API</p>
                                 <ul>
                                     <li><a href="https://api.quantgov.org/">RegCensus API</a></li>
                                     <li><a href="https://github.com/QuantGov/regcensus-api-python">Python API
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <a class="" href="https://www.reghub.ai/data/custom">Interactive Downloader</a>
                     </li>
                     <li class="submenu-section" data-extra-details="submenu-section-apis">
-                        <a href="#" class="">APIs <i class="fas fa-chevron-right"></i></a>
+                        <a href="#" class="">API <i class="fas fa-chevron-right"></i></a>
                         <ul class="submenu-extra-section-item">
                             <li><a href="https://api.quantgov.org/">RegCensus API</a></li>
                             <li><a href="https://github.com/QuantGov/regcensus-api-python">Python API Package</a></li>
