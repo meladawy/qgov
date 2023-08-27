@@ -280,7 +280,7 @@ table {
 
 footer {
   .sqs-block-html a,
-  [class^="sqsrte-text-color--"] {
+  a[class^="sqsrte-text-color--"] {
     text-decoration: none;
 
     &:hover {
