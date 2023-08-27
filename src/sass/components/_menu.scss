@@ -338,7 +338,8 @@ nav.header-menu-nav-list > ul li ul {
 
 nav.header-menu-nav-list > ul li.expanded {
   & > ul {
-    display: block
+    display: block;
+    padding: 0 0 0 1.5rem;
   }
 
   & > a > i.fa-chevron-right {
@@ -347,7 +348,9 @@ nav.header-menu-nav-list > ul li.expanded {
 }
 
 nav.header-menu-nav-list > ul li a {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
   border-bottom: 1px solid #e9e9e9;
 
