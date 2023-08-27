@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="submenu">
                         <div class="submenu-links-wrapper">
                             <div class="submenu-section">
-                                <a class="dropdown-nav-link" href="https://www.reghub.ai/data/bulk">CSVs</a>
+                                <a target="_blank" class="dropdown-nav-link" href="https://www.reghub.ai/data/bulk">CSVs</a>
                             </div>
                             <div class="submenu-section">
-                                <a class="dropdown-nav-link" href="https://www.reghub.ai/data/custom">Interactive
+                                <a target="_blank" class="dropdown-nav-link" href="https://www.reghub.ai/data/custom">Interactive
                                     Downloader</a>
                             </div>
                             <div class="submenu-section" data-extra-details="submenu-section-apis">
@@ -43,20 +43,20 @@ document.addEventListener('DOMContentLoaded', function () {
                             <div class="submenu-extra-section-item" id="submenu-section-apis">
                                 <p class="style-1">Our API</p>
                                 <ul>
-                                    <li><a href="https://api.quantgov.org/">RegCensus API</a></li>
-                                    <li><a href="https://github.com/QuantGov/regcensus-api-python">Python API
+                                    <li><a target="_blank" href="https://api.quantgov.org/">RegCensus API</a></li>
+                                    <li><a target="_blank" href="https://github.com/QuantGov/regcensus-api-python">Python API
                                             Package</a></li>
-                                    <li><a href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a>
+                                    <li><a target="_blank" href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a>
                                     </li>
-                                    <li><a href="https://www.quantgov.org/api-python-library-full-tutorial">API Help
+                                    <li><a target="_blank" href="https://www.quantgov.org/api-python-library-full-tutorial">API Help
                                             Guide</a></li>
                                 </ul>
                             </div>
                             <div class="submenu-extra-section-item" id="submenu-section-documentation">
                                 <p class="style-1">Guides and Docs</p>
                                 <ul>
-                                    <li><a href="https://www.reghub.ai/guide">User's Guide</a></li>
-                                    <li><a href="https://www.reghub.ai/data/documentation">Series Info</a></li>
+                                    <li><a target="_blank" href="https://www.reghub.ai/guide">User's Guide</a></li>
+                                    <li><a target="_blank" href="https://www.reghub.ai/data/documentation">Series Info</a></li>
                                     <li><a href="/documentation">Documentation</a>
                                     </li>
                                 </ul>
@@ -65,10 +65,10 @@ document.addEventListener('DOMContentLoaded', function () {
                         <!-- Add more submenu-sections as needed -->
                     </div>
                 </li>
-                <li><a href="/visuals">Visuals</a></li>
+                <li><a target="_blank" href="/visuals">Visuals</a></li>
                 <li><a href="/regcensus-explorer">State Snapshots</a></li>
                 <li class="submenu-parent">
-                    <a href="https://www.reghub.ai/">AI-Readable Laws & Rules</a>
+                    <a target="_blank" href="https://www.reghub.ai/">AI-Readable Laws & Rules</a>
                     <div class="submenu right-menu" style="display: none;">
                         <div class="submenu-links-wrapper">
                             <div class="submenu-section">
@@ -90,12 +90,12 @@ document.addEventListener('DOMContentLoaded', function () {
                             <div class="submenu-extra-section-item" id="submenu-section-apis">
                                 <p class="style-1">Our API</p>
                                 <ul>
-                                    <li><a href="https://api.quantgov.org/">RegCensus API</a></li>
-                                    <li><a href="https://github.com/QuantGov/regcensus-api-python">Python API
+                                    <li><a target="_blank" href="https://api.quantgov.org/">RegCensus API</a></li>
+                                    <li><a target="_blank" href="https://github.com/QuantGov/regcensus-api-python">Python API
                                             Package</a></li>
-                                    <li><a href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a>
+                                    <li><a target="_blank" href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a>
                                     </li>
-                                    <li><a href="https://www.quantgov.org/api-python-library-full-tutorial">API Help
+                                    <li><a target="_blank" href="https://www.quantgov.org/api-python-library-full-tutorial">API Help
                                             Guide</a></li>
                                 </ul>
                             </div>
@@ -131,9 +131,9 @@ document.addEventListener('DOMContentLoaded', function () {
                             <div class="submenu-extra-section-item" id="submenu-section-learn-nlp">
                                 <p class="style-1">How to use the platform</p>
                                 <ul>
-                                    <li><a href="https://quantgov.github.io/quantgov-tutorial/pages/intro.html">Platform Tutorial</a></li>
-                                    <li><a href="https://quantgov-website-files.s3.amazonaws.com/file-backup/QuantGov-An-Overview.pdf">Platform Overview</a></li>
-                                    <li><a href="https://github.com/QuantGov/quantgov">GitHub Repository</a>
+                                    <li><a target="_blank" href="https://quantgov.github.io/quantgov-tutorial/pages/intro.html">Platform Tutorial</a></li>
+                                    <li><a target="_blank" href="https://quantgov-website-files.s3.amazonaws.com/file-backup/QuantGov-An-Overview.pdf">Platform Overview</a></li>
+                                    <li><a target="_blank" href="https://github.com/QuantGov/quantgov">GitHub Repository</a>
                                     </li>
                                 </ul>
                             </div>
@@ -175,17 +175,17 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li class="submenu-section" data-extra-details="submenu-section-apis">
                         <a href="#" class="">API <i class="fas fa-chevron-right"></i></a>
                         <ul class="submenu-extra-section-item">
-                            <li><a href="https://api.quantgov.org/">RegCensus API</a></li>
-                            <li><a href="https://github.com/QuantGov/regcensus-api-python">Python API Package</a></li>
-                            <li><a href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a></li>
+                            <li><a target="_blank" href="https://api.quantgov.org/">RegCensus API</a></li>
+                            <li><a target="_blank" href="https://github.com/QuantGov/regcensus-api-python">Python API Package</a></li>
+                            <li><a target="_blank" href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a></li>
 
                         </ul>
                     </li>
                     <li class="submenu-section" data-extra-details="submenu-section-documentation">
                         <a href="#" class="">Documentation <i class="fas fa-chevron-right"></i></a>
                         <ul class="submenu-extra-section-item">
-                            <li><a href="https://www.reghub.ai/guide">User's Guide</a></li>
-                            <li><a href="https://www.reghub.ai/data/documentation">Series Info</a></li>
+                            <li><a target="_blank" href="https://www.reghub.ai/guide">User's Guide</a></li>
+                            <li><a target="_blank" href="https://www.reghub.ai/data/documentation">Series Info</a></li>
                             <li><a href="/documentation">Documentation</a></li>
                         </ul>
                     </li>
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="/visuals">Visuals</a></li>
             <li><a href="/regcensus-explorer">State Snapshots</a></li>
             <li>
-                <a href="https://www.reghub.ai/">AI-Readable Laws & Rules</a>
+                <a target="_blank" href="https://www.reghub.ai/">AI-Readable Laws & Rules</a>
             </li>
 
             <li>
@@ -213,12 +213,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li class="submenu-section" data-extra-details="submenu-section-learn-nlp">
                         <a href="#" class="">Learn Natural Language Processing <i class="fas fa-chevron-right"></i></a>
                         <ul class="submenu-extra-section-item" id="submenu-section-learn-nlp">
-                            <li><a href="https://quantgov.github.io/quantgov-tutorial/pages/intro.html">Platform
+                            <li><a target="_blank" href="https://quantgov.github.io/quantgov-tutorial/pages/intro.html">Platform
                                     Tutorial</a></li>
                             <li><a
                                     href="https://quantgov-website-files.s3.amazonaws.com/file-backup/QuantGov-An-Overview.pdf">Platform
                                     Overview</a></li>
-                            <li><a href="https://github.com/QuantGov/quantgov">GitHub Repository</a></li>
+                            <li><a target="_blank" href="https://github.com/QuantGov/quantgov">GitHub Repository</a></li>
                         </ul>
                     </li>
                 </ul>
