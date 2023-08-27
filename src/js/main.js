@@ -50,9 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
                                     </li>
                                     <li><a href="https://www.quantgov.org/api-python-library-full-tutorial">API Help
                                             Guide</a></li>
-                                    <li><a
-                                            href="https://new-website-files.s3.amazonaws.com/Regcensus+API+Patch+2.1.pdf">Patch
-                                            Notes</a></li>
                                 </ul>
                             </div>
                             <div class="submenu-extra-section-item" id="submenu-section-documentation">
@@ -100,9 +97,6 @@ document.addEventListener('DOMContentLoaded', function () {
                                     </li>
                                     <li><a href="https://www.quantgov.org/api-python-library-full-tutorial">API Help
                                             Guide</a></li>
-                                    <li><a
-                                            href="https://new-website-files.s3.amazonaws.com/Regcensus+API+Patch+2.1.pdf">Patch
-                                            Notes</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -185,8 +179,6 @@ document.addEventListener('DOMContentLoaded', function () {
                             <li><a href="https://github.com/QuantGov/regcensus-api-python">Python API Package</a></li>
                             <li><a href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a></li>
 
-                            <li><a href="https://new-website-files.s3.amazonaws.com/Regcensus+API+Patch+2.1.pdf">Patch
-                                    Notes</a></li>
                         </ul>
                     </li>
                     <li class="submenu-section" data-extra-details="submenu-section-documentation">
