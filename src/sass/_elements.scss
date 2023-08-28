@@ -364,5 +364,14 @@ ul.user-items-list-item-container {
     .card-date-item--date {
         font-weight: 400;
     }
+
+    // Mobile styling
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
+.fe-block-f880ec1ca0797507bf6b .sqs-block {
+    height: auto;
+}
