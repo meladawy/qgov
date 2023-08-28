@@ -48,8 +48,6 @@ document.addEventListener('DOMContentLoaded', function () {
                                             Package</a></li>
                                     <li><a target="_blank" href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a>
                                     </li>
-                                    <li><a target="_blank" href="https://www.quantgov.org/api-python-library-full-tutorial">API Help
-                                            Guide</a></li>
                                 </ul>
                             </div>
                             <div class="submenu-extra-section-item" id="submenu-section-documentation">
@@ -94,8 +92,6 @@ document.addEventListener('DOMContentLoaded', function () {
                                             Package</a></li>
                                     <li><a target="_blank" href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a>
                                     </li>
-                                    <li><a target="_blank" href="https://www.quantgov.org/api-python-library-full-tutorial">API Help
-                                            Guide</a></li>
                                 </ul>
                             </div>
                         </div>
