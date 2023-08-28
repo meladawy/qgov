@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <p class="style-1">Guides and Docs</p>
                                 <ul>
                                     <li><a target="_blank" href="https://www.reghub.ai/guide">User's Guide</a></li>
-                                    <li><a target="_blank" href="https://www.reghub.ai/data/documentation">Series Info</a></li>
                                     <li><a href="/documentation">Documentation</a>
                                     </li>
                                 </ul>
@@ -185,7 +184,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         <a href="#" class="">Documentation <i class="fas fa-chevron-right"></i></a>
                         <ul class="submenu-extra-section-item">
                             <li><a target="_blank" href="https://www.reghub.ai/guide">User's Guide</a></li>
-                            <li><a target="_blank" href="https://www.reghub.ai/data/documentation">Series Info</a></li>
                             <li><a href="/documentation">Documentation</a></li>
                         </ul>
                     </li>
