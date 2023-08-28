@@ -298,3 +298,20 @@ footer {
     max-width: 82vw;
   }
 }
+
+
+@media only screen and (max-width: 768px) {
+  body {
+    div.gallery {
+      display: block;
+    }
+
+    #block-5de93e3f52ac73425fb03398 {
+      display: block;
+    }
+
+    #page-section-5f9accf8ef71574316864f40 {
+      display: block;
+    }
+  }
+}
