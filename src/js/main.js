@@ -48,6 +48,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                             Package</a></li>
                                     <li><a target="_blank" href="https://github.com/QuantGov/regcensus-api-client-R">R API Package</a>
                                     </li>
+                                    <li><a target="_blank" href="/api-tutorials">API Tutorials</a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="submenu-extra-section-item" id="submenu-section-documentation">
@@ -65,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <li><a target="_blank" href="/visuals">Visuals</a></li>
                 <li><a href="/regcensus-explorer">State Snapshots</a></li>
                 <li class="submenu-parent">
-                    <a target="_blank" href="https://www.reghub.ai/">AI-Readable Laws & Rules</a>
+                    <a target="_blank" href="https://www.reghub.ai/">Search Regulatory Text</a>
                     <div class="submenu right-menu" style="display: none;">
                         <div class="submenu-links-wrapper">
                             <div class="submenu-section">
@@ -102,10 +104,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="submenu right-menu">
                         <div class="submenu-links-wrapper">
                             <div class="submenu-section" data-extra-details="submenu-section-join-research">
-                                <p class="dropdown-nav-link">Join Our Research <i class="fas fa-chevron-right"></i></p>
+                                <p class="dropdown-nav-link">Participate in Policy Research <i class="fas fa-chevron-right"></i></p>
                             </div>
                             <div class="submenu-section" data-extra-details="submenu-section-learn-nlp">
-                                <p class="dropdown-nav-link">Learn Natural Language Processing <i class="fas fa-chevron-right"></i></p>
+                                <p class="dropdown-nav-link">Use Technology to Quantify Documents <i class="fas fa-chevron-right"></i></p>
                             </div>
                         </div>
 
@@ -189,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="/visuals">Visuals</a></li>
             <li><a href="/regcensus-explorer">State Snapshots</a></li>
             <li>
-                <a target="_blank" href="https://www.reghub.ai/">AI-Readable Laws & Rules</a>
+                <a target="_blank" href="https://www.reghub.ai/">Search Regulatory Text</a>
             </li>
 
             <li>
@@ -197,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 <ul class="submenu-links-wrapper">
                     <li class="submenu-section" data-extra-details="submenu-section-join-research">
-                        <a href="#" class="">Join Our Research <i class="fas fa-chevron-right"></i></a>
+                        <a href="#" class="">Participate in Policy Research <i class="fas fa-chevron-right"></i></a>
                         <ul class="submenu-extra-section-item" id="submenu-section-join-research">
                             <li><a href="/policy-analytics-program">Program Overview</a></li>
                             <li><a href="/policy-research-program">Student Application</a></li>
@@ -205,7 +207,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         </ul>
                     </li>
                     <li class="submenu-section" data-extra-details="submenu-section-learn-nlp">
-                        <a href="#" class="">Learn Natural Language Processing <i class="fas fa-chevron-right"></i></a>
+                        <a href="#" class="">Use Technology to Quantify Documents <i class="fas fa-chevron-right"></i></a>
                         <ul class="submenu-extra-section-item" id="submenu-section-learn-nlp">
                             <li><a target="_blank" href="https://quantgov.github.io/quantgov-tutorial/pages/intro.html">Platform
                                     Tutorial</a></li>
